@@ -1,5 +1,5 @@
-6.0Redes
-6.0.1.1Introducción
+6.0 Redes
+6.0.1.1 Introducción
 En este capítulo, se brinda una descripción general de los principios, estándares y propósitos de las redes.
 
 Se analizan los distintos tipos de topologías, protocolos y modelos lógicos de red, y el hardware necesario para crear una red. Además, en este capítulo se abarcan las actualizaciones de componentes de red, las instalaciones y la configuración de servidores de correo electrónico, la resolución de problemas y el mantenimiento preventivo. También ofrece conocimientos sobre software de red, métodos de comunicación y relaciones de hardware.
@@ -73,4 +73,1245 @@ Conservación de recursos
 
 El procesamiento de datos se puede distribuir en muchas PC para evitar que una PC se sobrecargue con tareas de procesamiento.
 
+6.2.1 Tipos de Redes
 6.2.1.1 Redes LAN
+Las redes de datos continúan evolucionando en términos de complejidad, uso y diseño. Las redes de computadoras se identifican según las siguientes características específicas:
+
+El área que cubren.
+La forma en que se almacenan los datos.
+La forma en que se administran los recursos.
+La forma en que se organiza la red.
+El tipo de dispositivos de networking utilizados.
+El tipo de medios utilizados para conectar los dispositivos.
+Los distintos tipos de redes reciben diferentes nombres descriptivos. Por lo general, las redes individuales abarcan una única área geográfica y proporcionan servicios y aplicaciones a las personas dentro de una estructura organizativa común. Este tipo de red se denomina “red de área local” (LAN, Local Area Network). Una LAN puede constar de varias redes locales.
+
+Todas las redes locales dentro de una LAN dependen del mismo grupo de control administrativo. Este grupo aplica las políticas de control de acceso y de seguridad de la red. En este contexto, la palabra “local” se refiere a un control local coherente y no a una cercanía física. Es posible que los dispositivos de una LAN estén físicamente cerca, pero esto no constituye un requisito para una LAN.
+
+Una LAN puede ser tan pequeña como una única red local instalada en un hogar o una oficina pequeña. La definición de LAN evolucionó con el tiempo y actualmente incluye redes locales interconectadas compuestas por centenares de dispositivos instalados en varios edificios y ubicaciones.
+
+6.2.1.2 Redes WLAN
+Una LAN inalámbrica (WLAN, Wireless LAN) es una LAN que utiliza ondas de radio para transmitir datos entre dispositivos inalámbricos. En una LAN tradicional, los dispositivos se conectan entre sí mediante cableado de cobre. En algunos entornos, instalar cableado de cobre puede no ser práctico, conveniente o incluso posible. En esas situaciones, se utilizan dispositivos inalámbricos para transmitir y recibir datos mediante ondas de radio. Al igual que en las redes LAN, en una WLAN puede compartir recursos, como archivos e impresoras, y acceder a Internet.
+
+En las WLAN, los dispositivos inalámbricos se conectan a puntos de acceso dentro de un área específica. Por lo general, los puntos de acceso se conectan a la red mediante cableado de cobre. En lugar de proporcionar cableado de cobre a todos los hosts de la red, solo se conecta a la red el punto de acceso inalámbrico mediante cableado de cobre. El alcance (radio de cobertura) de los sistemas WLAN típicos varía desde menos de 98,4 ft (30 m) en interiores hasta distancias mucho mayores en exteriores, según la tecnología que se utilice.
+
+6.2.1.3 Redes PAN
+Una red de área personal (PAN, personal area network) es una red que conecta dispositivos, como mouses, teclados, impresoras, smartphones y tablet PC, dentro del alcance de una persona. Todos estos dispositivos están dedicados a un único host y, generalmente, se conectan con tecnología Bluetooth.
+
+Bluetooth es una tecnología inalámbrica que permite la comunicación entre dispositivos que se encuentran a corta distancia entre sí. Un dispositivo Bluetooth puede conectarse con hasta siete dispositivos Bluetooth más. El estándar IEEE 802.15.1 describe esta especificación técnica. Los dispositivos Bluetooth admiten voz y datos. Los dispositivos Bluetooth funcionan en el rango de radiofrecuencia de 2,4 GHz a 2,485 GHz, que se encuentra en la banda industrial, científica y médica (ISM, Industrial, Scientific, and Medical). El estándar Bluetooth incorpora el salto de frecuencia adaptable (AFH, Adaptive Frequency Hopping). El AFH permite que las señales “salten” utilizando distintas frecuencias dentro del rango Bluetooth, lo que reduce la posibilidad de interferencia cuando hay varios dispositivos Bluetooth presentes.
+
+6.2.1.4 Redes MAN
+Una red de área metropolitana (MAN, metropolitan area network) es una red que abarca un campus extenso o una ciudad. La red está compuesta por diversos edificios interconectados mediante backbones inalámbricos o de fibra óptica. Por lo general, los enlaces y el equipo de comunicaciones son propiedad de un consorcio de usuarios o de un proveedor de servicios de red que vende el servicio a los usuarios. Una MAN puede funcionar como una red de alta velocidad para permitir el uso compartido de recursos regionales.
+
+6.2.1.5 Redes WAN
+Una red de área extensa (WAN) conecta varias redes más pequeñas, como redes LAN, que se encuentran geográficamente separadas. El ejemplo más común de una WAN es Internet. Internet es una gran WAN compuesta por millones de LAN interconectadas. La tecnología WAN también se utiliza para conectar redes corporativas o de investigación. Para interconectar estas LAN situadas en distintas ubicaciones, se utilizan proveedores de servicios de telecomunicaciones.
+
+6.2.1.6 Redes punto a punto
+En una red punto a punto, no hay servidores dedicados ni jerarquía entre las PC. Cada dispositivo, también denominado “cliente”, tiene capacidades y responsabilidades equivalentes. Los usuarios individuales son responsables de sus propios recursos y pueden decidir qué datos y dispositivos compartir o instalar. Dado que los usuarios individuales son responsables de los recursos de sus propias PC, la red no tiene un punto central de control o administración.
+
+Las redes punto a punto funcionan mejor en entornos con diez PC o menos. Las redes punto a punto también pueden existir dentro de redes más grandes. Incluso en una red cliente extensa, los usuarios pueden compartir recursos directamente con otros usuarios sin utilizar un servidor de red. Si tiene más de una PC en el hogar, puede configurar una red punto a punto. Puede compartir archivos con otras PC, enviar mensajes entre PC e imprimir documentos con una impresora compartida.
+
+Las redes punto a punto tienen varias desventajas:
+
+No existe una administración de red centralizada, lo que hace difícil determinar quién controla los recursos en la red.
+
+No hay seguridad centralizada. Cada PC debe utilizar medidas de seguridad independientes para obtener protección de datos.
+
+La red se vuelve más compleja y difícil de administrar a medida que aumenta la cantidad de PC en ella.
+
+Es posible que no haya un almacenamiento de datos centralizado. Se deben mantener copias de seguridad de datos por separado, y dicha responsabilidad recae en los usuarios individuales.
+
+6.2.1.7 Redes cliente/servidor
+Los servidores tienen software instalado que les permite proporcionar servicios, como correo electrónico o páginas Web, a los clientes. Cada servicio requiere un software de servidor diferente. Por ejemplo, para proporcionar servicios Web a la red, el servidor necesita un software de servidor Web.
+
+En una red cliente/servidor, el cliente solicita información o servicios al servidor. El servidor le proporciona al cliente la información o el servicio que solicitó. Por lo general, los servidores de las redes cliente/servidor realizan parte del trabajo de procesamiento de las máquinas cliente; por ejemplo, revisan una base de datos para enviar solo los registros solicitados por el cliente. Esto permite una administración de red centralizada, lo que hace más sencillo determinar quién controla los recursos en la red. El control de los recursos está a cargo de una administración de red centralizada.
+
+Una PC con software de servidor puede proporcionar servicios a uno o varios clientes simultáneamente. Además, una única PC puede ejecutar varios tipos de software de servidor. En una empresa doméstica o una pequeña empresa, puede ser necesario que una PC funcione como servidor de archivos, servidor Web y servidor de correo electrónico. En un entorno corporativo, los empleados pueden acceder a una única PC que funciona como servidor de correo electrónico en la compañía. El servidor de correo electrónico se utiliza solo para enviar, recibir y almacenar correos electrónicos. El cliente de correo electrónico en la PC de un empleado emite una solicitud al servidor de correo electrónico para obtener los mensajes de correo electrónico no leídos. El servidor responde enviando al cliente el correo electrónico solicitado.
+
+Una única PC también puede ejecutar varios tipos de software de cliente. Debe haber un software de cliente para cada servicio requerido. Si en un cliente hay varios softwares de cliente instalados, puede conectarse a varios servidores al mismo tiempo. Por ejemplo, un usuario puede revisar su correo electrónico y ver una página Web mientras utiliza el servicio de mensajería instantánea y escucha la radio a través de Internet.
+
+Los modelos cliente/servidor hacen que sea sencillo determinar quién controla los recursos en la red al proporcionar una administración de red central. El administrador de red realiza copias de seguridad de datos e implementa medidas de seguridad. El administrador de red también controla el acceso de los usuarios a los recursos de red. Todos los datos en la red se almacenan en un servidor de archivos centralizado. Un servidor de impresión centralizado administra las impresoras compartidas en la red. Cada usuario debe proporcionar un nombre de usuario y contraseña autorizados para obtener acceso a los recursos de red que tiene permitido usar.
+
+
+6.3 Tecnologías y conceptos básicos de networking
+6.3.1 Flujo de datos
+6.3.1.1 Ancho de banda
+Cuando los datos se envían por una red de computadoras, se dividen en bloques pequeños denominados “paquetes”. Cada paquete contiene información de la dirección de origen y destino. El paquete, junto con la información de dirección física, se denomina “trama”. También contiene información que describe cómo volver a unir los paquetes en el destino. El ancho de banda determina la cantidad de paquetes que pueden transmitirse en un lapso fijo.
+
+El ancho de banda se mide en bits por segundo y, por lo general, se indica con alguna de las siguientes unidades de medida:
+
+b/s: bits por segundo
+kb/s: kilobits por segundo
+Mb/s: megabits por segundo
+Gb/s: gigabits por segundo
+NOTA: 1 byte equivale a 8 bits y se abrevia con una letra B mayúscula, y 1 MB/s equivale a, aproximadamente, 8 Mb/s.
+
+En la ilustración, se muestra una comparación del ancho de banda de una red con una autopista. En el ejemplo de la autopista, los automóviles y los camiones representan los datos, y la cantidad de carriles representa la cantidad de automóviles que pueden viajar por la autopista al mismo tiempo. En una autopista de ocho carriles, puede circular el cuádruple de automóviles que en una autopista de dos carriles.
+
+El tiempo que toma el desplazamiento de los datos de origen a destino se denomina “latencia”. Del mismo modo que los automóviles que viajan por la ciudad se encuentran con semáforos o desvíos, los datos sufren retrasos ocasionados por los dispositivos de red y la longitud de los cables. Los dispositivos de red agregan latencia al procesar y reenviar datos. Por lo general, cuando se navega la Web o se descarga un archivo, la latencia no causa problemas, pero puede afectar de forma significativa aquellas aplicaciones en las que el tiempo es un factor importante, como llamadas telefónicas, videos y juegos por Internet.
+
+6.3.1.2 Transmisión de datos
+Los datos que se transmiten por la red se pueden transmitir mediante uno de tres modos: simplex, half-duplex o full-duplex.
+
+Simplex
+
+El modo simplex, también denominado “unidireccional”, es una única transmisión en un solo sentido. Un ejemplo de transmisión simplex es la señal que se envía de una estación de televisión al televisor en el hogar.
+
+Half-duplex
+
+La transmisión de datos en una dirección por vez, como se muestra en la ilustración, se denomina “half-duplex”. En el modo half-duplex, el canal de comunicación permite alternar la transmisión en dos direcciones, pero no transmitir en ambas al mismo tiempo. Las radios bidireccionales, como las radios móviles de la Policía o de comunicaciones de emergencia, funcionan con transmisiones half-duplex. Cuando se presiona el botón en el micrófono para transmitir, no se puede escuchar al interlocutor. Si ambos interlocutores intentan hablar al mismo tiempo, no se produce ninguna transmisión.
+
+Full-duplex
+
+La transmisión de datos en ambas direcciones a la vez, como se muestra en la ilustración, se denomina “full-duplex”. Si bien los datos se transmiten en ambas direcciones, el ancho de banda se mide en una sola dirección. Los cables de red con 100 Mb/s en modo full-duplex tienen un ancho de banda de 100 Mb/s.
+
+Una conversación telefónica es un ejemplo de comunicación full-duplex: ambas personas pueden hablar y escucharse al mismo tiempo.
+
+La tecnología de networking full-duplex mejora el rendimiento de la red, debido a que los datos se pueden enviar y recibir al mismo tiempo. Las tecnologías de banda ancha, como la tecnología de línea de suscriptor digital (DSL, digital subscriber line) y de cable, funcionan en modo full-duplex. La tecnología de banda ancha permite que varias señales se desplacen por el mismo cable de manera simultánea. Con una conexión DSL, por ejemplo, los usuarios pueden descargar datos a la PC y hablar por teléfono al mismo tiempo.
+
+
+6.3.2 Direccionamiento de equipos en red
+6.3.2.1 Direccionamiento IP
+El protocolo de control de transmisión/protocolo de Internet (TCP/IP, Transmission Control Protocol/Internet Protocol) define las reglas que las PC deben seguir para comunicarse entre sí a través de Internet. TCP es el principal protocolo de Internet para el envío confiable de datos. El protocolo IP proporciona una estructura de direccionamiento que se encarga del envío de datos desde la PC de origen hasta la PC de destino.
+
+Una dirección IP es un número que se utiliza para identificar un dispositivo en la red. Cada dispositivo de una red debe tener una dirección IP única para comunicarse con otros dispositivos de red. Como se mencionó anteriormente, un host es un dispositivo que envía y recibe información en la red. Los dispositivos de red son dispositivos que trasladan datos a través de la red.
+
+Por lo general, las huellas digitales de las personas no cambian y constituyen una manera de identificar físicamente a las personas. La dirección postal de una persona puede no mantenerse siempre igual, dado que se relaciona con el sitio donde vive o donde recoge la correspondencia; esta dirección puede cambiar. En un host, la dirección de control de acceso al medio (MAC, Media Access Control) se asigna a la NIC del host y se conoce como “dirección física”. La dirección física sigue siendo la misma independientemente de dónde esté ubicado el host en la red, de la misma manera en que las huellas digitales siguen siendo las mismas independientemente de adónde vaya la persona. Las direcciones MAC constan de seis grupos de dos valores hexadecimales separados por un guion (-) o por dos puntos (:), por ejemplo, 00-26-6C-FC-D5-AE. Los valores hexadecimales se definen como el rango de números del 0 al 9 y de letras de la “a” a la “f”.
+
+La dirección IP es similar a la dirección postal de una persona. Se conoce como “dirección lógica”, ya que se asigna lógicamente en función de la ubicación del host. La dirección IP, o dirección de red, la asigna un administrador de red a cada host en función de la red local. Este proceso es similar a la asignación de las direcciones por parte del gobierno local según la descripción lógica de la ciudad o pueblo y el barrio.
+
+IPv4 e IPv6
+
+A principios de los años noventa, existía la preocupación de que se agotaran las direcciones de red IPv4, lo que llevó a que el Grupo de trabajo de ingeniería de Internet comenzara a buscar un reemplazo. Esto llevó al desarrollo de lo que hoy se conoce como IPv6. Actualmente, IPv6 funciona junto con IPv4 y está comenzando a reemplazarlo.
+
+Una dirección IPv4 consta de 32 bits, con un espacio potencial de direcciones de 2^32 (lo que, en notación decimal, equivale a aproximadamente un 4 seguido de 9 ceros). Una dirección IPv6 consta de 128 bits, con un espacio potencial de direcciones de 2^128 (lo que, en notación decimal, equivale a aproximadamente un 3 seguido de 38 ceros). Con IPv6, la cantidad de direcciones disponibles por persona es de aproximadamente 10^30. Si el espacio de direcciones IPv4 se representara con una canica, el espacio de direcciones IPv6 se representaría con una esfera de un tamaño casi igual al del planeta Saturno.
+
+6.3.2.2 IPv4
+Una dirección IPv4 consta de una serie de 32 bits binarios (unos y ceros). Para las personas, resulta difícil leer una dirección IPv4 binaria. Por este motivo, los 32 bits se agrupan en cuatro segmentos de 8 bits denominados “octetos”. Sin embargo, incluso en este formato agrupado, las direcciones IPv4 no son fáciles de leer, escribir o recordar. Por esa razón, cada octeto se presenta como su valor decimal, separado por un punto decimal. Este formato se conoce como “notación decimal punteada”.
+
+Cuando un host se configura con una dirección IPv4, esta se introduce como un número decimal punteado, por ejemplo, 192.168.1.5. Imagine si tuviera que introducir el equivalente binario de 32 bits de este valor: 11000000101010000000000100000101. Si se confundiera en un solo bit, la dirección sería diferente, por lo que el host no podría comunicarse con la red.
+
+La dirección IPv4 lógica de 32 bits tiene una composición jerárquica y consta de dos partes. La primera parte identifica la red, y la segunda parte identifica a un host en esa red. Se requieren ambas partes. Por ejemplo, si un host tiene la dirección IPv4 192.168.18.57, los primeros tres octetos (192.168.18) identifican la porción de red de la dirección, y el último octeto (57) identifica el host. Esto se conoce como “direccionamiento jerárquico”, debido a que los routers solo necesitan comunicarse con redes y no con hosts individuales. Un router es un dispositivo de networking que reenvía paquetes de datos a sus destinos a través de redes.
+
+Las direcciones IPv4 se dividen en las siguientes clases:
+
+Clase A: redes extensas implementadas por compañías grandes.
+Clase B: redes medianas implementadas por universidades y otras organizaciones de tamaño similar.
+Clase C: redes pequeñas implementadas por organizaciones pequeñas o proveedores de servicios de Internet (ISP, Internet service providers) para suscripciones de clientes.
+Clase D: uso especial para multicast.
+Clase E: utilizada para pruebas experimentales.
+Además de crear clases independientes, el Grupo de trabajo de ingeniería de Internet (IETF, Internet Engineering Task Force) reservó parte del espacio de direcciones de Internet para las redes privadas. Las redes privadas no tienen conexión a las redes públicas. Las direcciones de redes privadas no se enrutan a través de Internet. Esto permite que redes en distintas ubicaciones utilicen el mismo esquema de direccionamiento privado sin crear conflictos de direccionamiento. Un ejemplo de una ocasión en la que estas direcciones privadas son útiles es en un aula de laboratorio donde se quiere evitar el acceso fuera de la red.
+
+Cada una de estas clases tiene un rango de direcciones IP privadas:
+
+Clase A: 10.0.0.0 a 10.255.255.255
+Clase B: 172.16.0.0 a 172.31.255.255
+Clase C: 192.168.0.0 a 192.168.255.255
+Máscara de subred para IPv4
+
+La máscara de subred indica la porción de red de una dirección IPv4. Al igual que las direcciones IPv4, la máscara de subred es un número decimal punteado. Por lo general, todos los hosts dentro de una LAN utilizan la misma máscara de subred. En la ilustración, se muestran las máscaras de subred predeterminadas para las direcciones IPv4 utilizables que se asignan a las tres primeras clases de direcciones IPv4:
+
+255.0.0.0: clase A, lo que indica que el primer octeto de la dirección IPv4 es la porción de red.
+255.255.0.0: clase B, lo que indica que los primeros dos octetos de la dirección IPv4 constituyen la porción de red.
+255.255.255.0: clase C, lo que indica que los primeros tres octetos de la dirección IPv4 constituyen la porción de red.
+Si una organización posee una red de clase B pero necesita proporcionar direcciones IPv4 para cuatro LAN, debe subdividir la dirección de clase B en cuatro partes más pequeñas. La división en subredes es una división lógica de una red que proporciona una manera de dividir una red, y la máscara de subred especifica cómo se subdivide. Por lo general, la división en subredes la realiza un administrador de red experimentado. Una vez que se crea el esquema de división en subredes, pueden configurarse las direcciones IPv4 y las máscaras de subred correspondientes en los hosts de las cuatro LAN. Estas aptitudes se enseñan en los cursos de Cisco Networking Academy relacionados con las aptitudes de networking de nivel Cisco Certified Network Associate (CCNA).
+
+6.3.2.3 IPv6
+Es difícil trabajar con números de 128 bits; por eso, la notación de la dirección IPv6 representa los 128 bits como 32 valores hexadecimales. Esos 32 valores hexadecimales se subdividen, a su vez, en ocho campos de cuatro valores hexadecimales, que utilizan dos puntos como delimitadores. Cada campo de cuatro valores hexadecimales se denomina “bloque”.
+
+La dirección IPv6 tiene una jerarquía de tres partes, como se muestra en la Figura 1. El prefijo global, conocido también como “prefijo de sitio”, está compuesto por los primeros tres bloques de la dirección, y se lo asigna a una organización mediante un registro de nombres de Internet. La ID de subred incluye el cuarto bloque de la dirección y la ID de interfaz incluye los últimos cuatro bloques de la dirección. El administrador de red controla tanto la subred como la ID de interfaz.
+
+Por ejemplo, si un host tiene la siguiente dirección IPv6: 3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344, la dirección de prefijo global es fe80:6a88:85a3, la dirección de ID de subred es 08d3 y la dirección de ID de interfaz es 1319:8a2e:0370:7344.
+
+La dirección IPv6 se puede abreviar; para ello, deben tenerse en cuenta las siguientes reglas:
+
+Omitir los ceros iniciales en un valor de 16 bits.
+Reemplazar un grupo de ceros consecutivos por dos puntos.
+En la Figura 2, se proporciona un ejemplo de cómo se aplican estas reglas.
+
+6.3.2.4 Direccionamiento estático
+En una red con pocos hosts, es fácil configurar manualmente cada dispositivo con la dirección IP correcta. Un administrador de red que entienda de direccionamiento IP debe asignar las direcciones y saber elegir una dirección válida para una red particular. La dirección IP asignada es única para cada host dentro de la misma red o subred. Esto se conoce como “direccionamiento IP estático”.
+
+Para configurar una dirección IP estática en un host, vaya a la ventana Propiedades de TCP/IPv4 de la NIC, como se muestra en la Figura 1. La NIC permite que una PC se conecte a una red mediante una dirección MAC. Mientras que la dirección IP es una dirección lógica definida por el administrador de red, una dirección MAC, como se muestra en la Figura 2, se programa (o graba) de manera permanente en la NIC cuando esta se fabrica. La dirección IP de una NIC se puede modificar, pero la dirección MAC nunca cambia.
+
+Puede asignar la siguiente información de configuración de dirección IP a un host:
+
+Dirección IP: identifica la PC en la red.
+Máscara de subred: se utiliza para identificar la red a la que está conectada la PC.
+Gateway predeterminado: identifica el dispositivo empleado por la PC para acceder a Internet o a otra red.
+Valores opcionales: por ejemplo, la dirección del servidor del Sistema de nombres de dominios (DNS, Domain Name System) preferida y la dirección del servidor DNS alternativa.
+En Windows 7, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Cambiar configuración del adaptador; a continuación, haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades > Usar la siguiente dirección IP > Usar las siguientes direcciones de servidor DNS > Aceptar > Aceptar.
+
+En Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Administrar conexiones de red; a continuación, haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades > Usar la siguiente dirección IP > Usar las siguientes direcciones de servidor DNS > Aceptar > Aceptar.
+
+En Windows XP, utilice la siguiente ruta:
+
+Inicio > Panel de control > Conexiones de red; a continuación, haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IP > Propiedades > Usar la siguiente dirección IP > Usar las siguientes direcciones de servidor DNS > Aceptar > Aceptar.
+
+6.3.2.5 Direccionamiento DHCP
+Si hay varias PC que componen una LAN, la configuración manual de las direcciones IP para cada host en la red puede llevar mucho tiempo, y es muy probable que se produzcan errores. Un servidor de Protocolo de configuración dinámica de host (DHCP, Dynamic Host Configuration Protocol) asigna de forma automática las direcciones IP, lo cual simplifica el proceso de asignación de direcciones. La configuración automática de TCP/IP también disminuye la posibilidad de asignar direcciones IP duplicadas o no válidas.
+
+El servidor de DHCP mantiene una lista de direcciones IP para asignar y administra el proceso para que todos los dispositivos de la red reciban una dirección IP única. Cuando el servidor de DHCP recibe la solicitud de un host, el servidor selecciona información de la dirección IP de un grupo de direcciones predefinidas que están almacenadas en una base de datos. Cuando se selecciona la información de la dirección IP, el servidor de DHCP ofrece estos valores al host de la red que envía la solicitud. Si el host acepta la oferta, el servidor de DHCP asigna la dirección IP por un período específico. Este proceso se denomina “concesión”. Cuando caduca la concesión, el servidor de DHCP puede utilizar esta dirección para otra PC que se una a la red. Sin embargo, el dispositivo puede renovar la concesión y conservar la dirección IP.
+
+Para que una PC en una red pueda aprovechar los servicios del DHCP, la PC debe poder identificar al servidor en la red local. Se puede configurar una PC para que acepte una dirección IP de un servidor de DHCP seleccionando la opción Obtener una dirección IP automáticamente en la ventana de configuración de la NIC, como se muestra en la Figura 1. Cuando se establece que una PC obtenga la dirección IP automáticamente, el resto de las opciones de configuración de direccionamiento IP no están disponibles. La configuración de DHCP es la misma tanto para una NIC conectada por cable como para una NIC inalámbrica.
+
+La PC solicita una dirección IP a un servidor de DHCP cada cinco minutos. Si la PC no se puede comunicar con el servidor de DHCP para obtener una dirección IP, el OS Windows asigna automáticamente una IP link-local. Si se le asigna una dirección IP link-local a la PC, que está en el rango de 169.254.0.0 a 169.254.255.255, la PC solo se puede comunicar con otras PC conectadas a la misma red dentro de este rango de direcciones IP.
+
+El servidor de DHCP asigna automáticamente la siguiente información de configuración de dirección IP a un host:
+
+Dirección IP
+Máscara de subred
+Gateway predeterminado
+Valores opcionales, como una dirección de servidor DNS, como se muestra en la Figura 2
+En Windows 7, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Cambiar configuración del adaptador; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades y, a continuación, seleccione el botón de opción Obtener una dirección IP automáticamente > Aceptar > Aceptar.
+
+En Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Administrar conexiones de red; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades y, a continuación, seleccione el botón de opción Obtener una dirección IP automáticamente > Aceptar > Aceptar.
+
+En Windows XP, utilice la siguiente ruta:
+
+Inicio > Panel de control > Conexiones de red; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IP > Propiedades y, a continuación, seleccione el botón de opción Obtener una dirección IP automáticamente > Aceptar > Aceptar.
+
+Configuración de parámetros de IP alternativos
+
+Establecer una configuración IP alternativa en Windows simplifica el traspaso entre una red que exige el uso de DHCP y una red que utiliza una configuración IP estática. Si una PC no puede comunicarse con el servidor de DHCP en la red, Windows utiliza la configuración IP alternativa asignada a la NIC. La configuración IP alternativa también reemplaza la dirección IP privada automática (APIPA, Automatic Private IP Addressing) que Windows asigna cuando no es posible conectarse al servidor de DHCP.
+
+Para crear una configuración IP alternativa, como se muestra en la Figura 3, haga clic en la ficha Configuración alternativa de la ventana Propiedades de la NIC.
+
+DNS
+
+Para acceder a un servidor DNS, la PC utiliza una dirección IP establecida en la configuración del DNS de la NIC en la PC. El DNS resuelve o asigna nombres de host y direcciones URL a las direcciones IP.
+
+Todos los equipos Windows tienen una caché DNS que almacena nombres de host que se resolvieron recientemente. La caché es el primer lugar donde el cliente DNS busca resoluciones de nombres de host. Debido a que se ubica en la memoria, la caché recupera las direcciones IP resueltas más rápidamente que si se utiliza un servidor DNS. Además, no genera tráfico en la red.
+
+6.3.2.6 ICMP
+El Protocolo de mensajes de control de Internet (ICMP, Internet Control Message Protocol) lo utilizan los dispositivos en una red para enviar mensajes de control y de error a las PC y a los servidores. El ICMP cumple diferentes funciones, como anunciar errores de red y congestión en la red, y resolver problemas.
+
+Ping se utiliza comúnmente para probar las conexiones entre las PC. Ping es una utilidad de línea de comandos sencilla pero muy útil, que se utiliza para determinar si es posible acceder a una dirección IP específica. Para ver una lista de opciones que puede utilizar con el comando ping, escriba C:\>ping /? en la ventana del símbolo del sistema.
+
+El comando ipconfig es otra utilidad de línea de comandos útil que se emplea para verificar que una NIC tenga una dirección IP válida. Para mostrar la información de configuración completa de todos los adaptadores de red, escriba C:\> ipconfig /all en la ventana del símbolo del sistema. Puede hacer ping en la dirección IP obtenida del comando ipconfig /all para probar la conectividad IP.
+
+La utilidad Ping se encarga de enviar una solicitud de eco ICMP a una PC de destino o a otro dispositivo de red. El dispositivo que recibe la solicitud envía una respuesta de eco ICMP para confirmar la conectividad. Las solicitudes y las respuestas de eco son mensajes de prueba que determinan si los dispositivos pueden enviarse paquetes entre ellos. Se envían cuatro solicitudes de eco ICMP (pings) a la PC de destino. Si llegan a la PC de destino, esta devuelve cuatro respuestas de eco ICMP. El porcentaje de respuestas correctas puede ayudarlo a determinar la confiabilidad y la accesibilidad de la PC de destino. Otros mensajes de ICMP informan paquetes no entregados, y si un dispositivo está demasiado ocupado como para manejar el paquete.
+
+También puede hacer ping para buscar la dirección IP de un host cuando se conoce el nombre del host. Si hace ping en el nombre de un sitio Web (por ejemplo, cisco.com), como se muestra en la ilustración, se muestra la dirección IP del servidor.
+
+
+6.3.3 Protocolos y puertos comunes
+6.3.3.1 Protocolos TCP y UDP
+Un protocolo es un conjunto de reglas. Los protocolos de Internet son conjuntos de reglas que controlan la comunicación dentro de una red y entre las PC que la conforman. Las especificaciones de protocolo definen el formato de los mensajes que se intercambian. Una carta enviada mediante el sistema de correo postal también utiliza protocolos. Parte del protocolo especifica en qué parte del sobre se debe escribir la dirección de entrega. Si la dirección de entrega está escrita en el lugar incorrecto, la carta no se puede entregar.
+
+La sincronización es fundamental para que los paquetes se entreguen de forma confiable. Los protocolos requieren que los mensajes lleguen dentro de ciertos intervalos para que la PC no espere indefinidamente a que lleguen mensajes que tal vez se hayan perdido. Los sistemas cuentan con uno o más temporizadores durante la transmisión de datos. Los protocolos también toman medidas alternativas si la red no cumple con las reglas de sincronización.
+
+Las siguientes son las funciones principales de los protocolos:
+
+Identificar y manejar errores.
+Comprimir datos.
+Decidir cómo se dividen y empaquetan los datos.
+Direccionar paquetes de datos.
+Decidir cómo anunciar el envío y la recepción de paquetes de datos.
+Los dispositivos y las PC que se conectan a Internet utilizan una suite de protocolos denominada TCP/IP para comunicarse entre ellos. La información se transmite, generalmente, a través de dos protocolos, TCP y UDP, como se muestra en la ilustración.
+
+Al diseñar una red, se deben determinar los protocolos que se utilizarán. Algunos protocolos son exclusivos y solo funcionan en equipos específicos, mientras que otros son de estándar abierto y funcionan en varios equipos.
+
+6.3.3.3 Puertos y protocolos TCP y UDP
+Cuando se habilita el stack de protocolos TCP/IP, otros protocolos se pueden comunicar en puertos específicos. Por ejemplo, el protocolo HTTP utiliza el puerto 80 de manera predeterminada. Un puerto es un identificador numérico que se utiliza para mantener un registro de conversaciones específicas. Cada mensaje que envía un host contiene un puerto de origen y un puerto de destino.
+
+Las aplicaciones de software de red utilizan estos protocolos y puertos para realizar funciones en Internet o en una red. Algunas aplicaciones de software de red incluyen servicios de administración de páginas Web, envío de correo electrónico y transferencia de archivos. Estos servicios pueden ser prestados por un solo servidor o muchos servidores. Los clientes utilizan puertos bien conocidos para cada servicio para que las solicitudes de los clientes se puedan identificar mediante el uso de un puerto de destino específico.
+
+Para entender cómo funcionan Internet y las redes, debe estar familiarizado con los protocolos utilizados comúnmente y con los puertos asociados. Algunos de los usos de estos protocolos son conectarse a un dispositivo de red remota, convertir la dirección URL de un sitio Web en una dirección IP y trasferir archivos de datos. A medida que adquiera experiencia en TI, se encontrará con otros protocolos, pero estos no se utilizan con tanta frecuencia como los protocolos comunes aquí descritos.
+
+En esta tabla, se muestran algunos de los protocolos de red y de Internet más comunes, y el número de puerto que utilizan estos protocolos. Cuanto más entienda sobre cada uno de los protocolos, mejor podrá comprender cómo funcionan las redes e Internet.
+
+6.4 Componentes físicos de una red
+6.4.1 Dispositivos de red
+6.4.1.1 Módems
+Para respaldar el envío inmediato de los millones de mensajes que se intercambian entre las personas en todo el mundo, confiamos en una Web de redes interconectadas. La estandarización de distintos elementos de la red permite que trabajen juntos los equipos y los dispositivos creados por diferentes compañías. Es importante que los técnicos de TI entiendan el propósito y la función de los distintos equipos de red que se utilizan para dar soporte a las operaciones personales y comerciales.
+
+Un módem es un dispositivo electrónico que se conecta a Internet por medio de un ISP. El módem convierte los datos digitales en señales analógicas para transmitirlas a través de una línea telefónica. Debido a que las señales analógicas cambian gradual y constantemente, se pueden dibujar como ondas. En este sistema, las señales digitales se representan como bits binarios. Las señales digitales se deben convertir a una forma de onda para que viajen por la línea telefónica. El módem que las recibe las vuelve a convertir a bits para que la PC que las recibe pueda procesar los datos.
+
+El módem en el extremo receptor vuelve a convertir las señales analógicas a datos digitales para que la PC los pueda interpretar. El proceso de convertir señales analógicas a digitales y de nuevo a analógicas se denomina “modulación/demodulación”. La precisión de la transmisión basada en el módem aumentó con el desarrollo de protocolos de detección y corrección de errores, que disminuyen o eliminan ruidos e interferencia en las líneas telefónicas.
+
+El módem interno se conecta a una ranura de expansión en la motherboard. Los módems externos se conectan a la PC a través de los puertos serie y USB. Para que el módem funcione correctamente, los controladores de software deben estar instalados y los puertos de conexión deben estar configurados.
+
+Se conoce como Conexión a red por dial-up (DUN, Dialup Networking) al método utilizado para que las PC se comuniquen mediante el sistema de telefonía pública. Los módems se comunican entre sí por medio de señales de tono de audio. Esto significa que los módems pueden duplicar las características de marcado de un teléfono. La DUN crea un Protocolo punto a punto (PPP, Point-to-Point Protocol). Un PPP es simplemente una conexión entre dos PC por medio de una línea telefónica.
+
+6.4.1.2 Hubs, puentes y switches
+Para que la transmisión de datos sea más extensible y eficaz que una simple red punto a punto, los diseñadores de redes utilizan dispositivos de red especializados, como hubs, puentes y switches, routers y puntos de acceso inalámbricos, para enviar datos entre dispositivos.
+
+Hubs
+
+Los hubs, como se muestra en la Figura 1, extienden el rango de una red mediante la recepción de datos en un puerto, para después regenerarlos y enviarlos al resto de los puertos. Un hub también puede funcionar como repetidor. El repetidor extiende el alcance de una red, ya que reconstruye la señal, lo que supera los efectos del deterioro de datos producido por la distancia. El hub también se puede conectar a otro dispositivo de networking, como un switch o un router conectado a otras secciones de la red.
+
+En la actualidad, los hubs no se utilizan con tanta frecuencia debido a la eficacia y el bajo costo de los switches. Los hubs no segmentan el tráfico de la red; por lo tanto, disminuyen el ancho de banda disponible para todos los dispositivos conectados a estos. Además, debido a que los hubs no pueden filtrar datos, hay un movimiento constante e innecesario de tráfico de la red entre los dispositivos conectados a estos.
+
+Puentes y switches
+
+Antes de ser transmitidos por la red, los archivos se dividen en pequeñas unidades de datos, llamadas “paquetes”. Este proceso permite verificar errores y transmitir datos más fácilmente si un paquete se pierde o se daña. Se agrega información de dirección al principio y al final del paquete antes de que se transmita. El paquete, junto con la información de dirección, se denomina “trama”.
+
+Generalmente, las LAN se dividen en secciones denominadas “segmentos”, de la misma forma en que una compañía se divide en departamentos, o una escuela, en grados. Los límites de los segmentos se pueden definir mediante el uso de un puente. Un puente filtra el tráfico de la red entre los segmentos LAN. Los puentes llevan un registro de todos los dispositivos en cada segmento al que está conectado el puente. Cuando el puente recibe una trama, este examina la dirección de destino para determinar si la trama se debe enviar a un segmento distinto o si hay que descartarla. Además, el puente ayuda a mejorar el flujo de datos al mantener las tramas confinadas solo al segmento al que pertenecen.
+
+A veces, a los switches, que se muestran en la Figura 2, se los denomina “puentes multipuerto”. Un puente típico tiene dos puertos, que conectan dos segmentos de la misma red. Un switch tiene varios puertos, según la cantidad de segmentos de red que se deban conectar. Un switch es un dispositivo más sofisticado que un puente.
+
+En las redes modernas, los switches reemplazaron a los hubs como punto central de conectividad. Al igual que en un hub, la velocidad del switch determina la velocidad máxima de la red. Sin embargo, los switches filtran y segmentan el tráfico de la red al enviar datos solo al dispositivo al que se envían los datos. Esto proporciona un mayor ancho de banda dedicado a cada dispositivo de la red.
+
+Los switches mantienen una tabla de conmutación. La tabla de conmutación contiene una lista de todas las direcciones MAC de la red y una lista de puertos de switch que se pueden utilizar para alcanzar un dispositivo con una dirección MAC determinada. La tabla de conmutación registra las direcciones MAC al inspeccionar la dirección MAC de origen de cada trama entrante, así como el puerto al que llega la trama. A continuación, el switch crea una tabla de conmutación que asigna direcciones MAC a puertos de salida. Cuando llega una trama destinada a una dirección MAC específica, el switch utiliza la tabla de conmutación para determinar el puerto que se debe utilizar para alcanzar esa dirección MAC. Se reenvía la trama desde el puerto hacia el destino. Al enviar tramas hacia el destino desde un solo puerto, los otros puertos no se ven afectados.
+
+Power over Ethernet (PoE)
+
+El switch PoE transfiere, junto con datos, pequeñas cantidades de corriente continua a través del cable Ethernet para alimentar los dispositivos PoE. Los dispositivos de bajo voltaje que admiten PoE, como los puntos de acceso Wi-Fi, los dispositivos de video de vigilancia y las NIC, se pueden alimentar de forma remota. Los dispositivos que admiten PoE se pueden alimentar a través de una conexión Ethernet a distancias de hasta 330 ft (100 m).
+
+6.4.1.3 Routers y puntos de acceso inalámbrico
+Cuando se suscriba a un ISP, determine qué tipo de equipo se encuentra disponible para elegir el dispositivo más apropiado. Un ISP es una compañía que presta servicios de Internet a personas o empresas. Por lo general, un ISP proporciona conexión a Internet, cuentas de correo electrónico y páginas Web por un abono mensual. Algunos ISP alquilan equipos mensualmente. Esto puede ser más atractivo que comprarlos, ya que el ISP se encarga del servicio técnico si se presenta una falla, si es necesario realizar algún cambio o si se debe actualizar la tecnología. Los equipos que se pueden utilizar para conectarse a un ISP se muestran en la Figura 1.
+
+Puntos de acceso inalámbrico
+
+Los puntos de acceso inalámbrico, que se muestran en la Figura 2, proporcionan acceso a la red a dispositivos inalámbricos, como computadoras portátiles y tablet PC. El punto de acceso inalámbrico utiliza ondas de radio para comunicarse con la NIC inalámbrica en los dispositivos y con otros puntos de acceso inalámbrico. El punto de acceso tiene un rango de cobertura limitado. Las grandes redes requieren varios puntos de acceso para proporcionar una cobertura inalámbrica adecuada. El punto de acceso inalámbrico proporciona conectividad solo a la red, mientras que el router inalámbrico proporciona características adicionales, como la asignación de direcciones IP.
+
+Routers
+
+Los routers conectan las redes entre sí. Los switches utilizan direcciones MAC para reenviar una trama dentro de una única red. Los routers utilizan direcciones IP para reenviar paquetes a otras redes. Un router puede ser una PC con software de red especial instalado o un dispositivo construido por fabricantes de equipos de red.
+
+En una red corporativa, un puerto de router se conecta a la conexión WAN y los otros puertos se conectan a las LAN corporativas. El router se convierte en el gateway, o en la ruta hacia el exterior, para la LAN.
+
+Dispositivos multipropósito
+
+Los dispositivos multipropósito, que se muestran en la Figura 3, son dispositivos de red que cumplen más de una función. Es más conveniente comprar y configurar un dispositivo que cumpla con todas las necesidades que comprar distintos dispositivos por separado para cada función. Esto ocurre particularmente con los usuarios que trabajan en su hogar. En una red doméstica, el router conecta a Internet las PC y los dispositivos de red que hay en el hogar. El router sirve como gateway doméstico y switch. El router inalámbrico sirve como gateway doméstico, punto de acceso inalámbrico y switch. Es posible que los dispositivos multipropósito incluyan un módem.
+
+6.4.1.4 NAS
+El Almacenamiento conectado a la red (NAS, Network-attached storage) es un dispositivo que consta de uno o más discos duros, una conexión Ethernet y un sistema operativo integrado en lugar de un sistema operativo de red con todas las funciones. El dispositivo NAS se conecta a la red, lo que permite a los usuarios en la red acceder a archivos y compartirlos, transmitir medios y realizar copias de seguridad de datos en una ubicación central. Los dispositivos NAS que admiten varios discos duros pueden proporcionar protección de datos en el nivel de RAID.
+
+El NAS es un diseño cliente/servidor. Un único dispositivo de hardware, generalmente denominado “puerta de enlace NAS”, actúa como interfaz entre el NAS y los clientes de la red. Los clientes siempre se conectan a la puerta de enlace NAS, no a los dispositivos de almacenamiento individuales. Un dispositivo NAS no requiere de monitor, teclado ni mouse.
+
+Los sistemas NAS proporcionan un fácil manejo. Generalmente, incluyen características incorporadas, como cuotas de espacio en disco, autenticación segura y envío automático de alertas de correo electrónico si se detecta un error en el equipo.
+
+6.4.1.5 Teléfonos VoIP
+Voz sobre IP (VOIP, Voice over IP) es un método para realizar llamadas telefónicas mediante redes de datos e Internet. VoIP convierte las señales analógicas de las voces en información digital que se transporta en paquetes IP. VoIP también puede utilizar una red IP existente para proporcionar acceso a la red pública de telefonía conmutada (PSTN, public switched telephone network).
+
+Los teléfonos VoIP parecen teléfonos comunes, pero en lugar de utilizar el conector de teléfono RJ-11 estándar, utilizan un conector Ethernet RJ-45. Los teléfonos VoIP se conectan directamente a una red y poseen todo el hardware y software necesarios para manejar las comunicaciones IP.
+
+Al utilizar VoIP para conectarse a la PSTN, es posible que dependa de una conexión a Internet. Esto puede ser una desventaja si se produce una interrupción en el servicio de conexión a Internet. Cuando se produce una interrupción en el servicio, el usuario no puede realizar llamadas telefónicas.
+
+Existen varias formas de utilizar VoIP:
+
+Teléfono IP: dispositivo que se conecta a una red IP mediante un conector Ethernet RJ-45 o una conexión inalámbrica.
+Adaptador de teléfono analógico (ATA): el Adaptador de teléfono analógico (ATA, Analog Telephone Adapter) es un dispositivo que conecta dispositivos analógicos estándar, como teléfonos, máquinas de fax o contestadores automáticos a una red IP.
+Software de teléfono IP: esta aplicación permite la conexión mediante el uso de un micrófono, altavoces y una tarjeta de sonido para emular la funcionalidad del teléfono IP.
+
+6.4.1.6 Firewalls de hardware
+Los firewalls de hardware, como los routers integrados, protegen los datos y los equipos de una red del acceso no autorizado. El firewall de hardware es una unidad independiente que reside entre dos redes o más, como se muestra en la ilustración. No utiliza los recursos de las PC que protege, por lo que el rendimiento de procesamiento no se ve afectado.
+
+Se debe utilizar un firewall junto con un software de seguridad. El firewall reside entre dos o más redes y controla el tráfico entre ellas; de este modo, ayuda a prevenir el acceso no autorizado. Los firewalls utilizan diversas técnicas para determinar a qué se le permite o deniega acceso a un segmento de red.
+
+A continuación, se indican los aspectos que deben tenerse en cuenta al seleccionar un firewall de hardware:
+
+Espacio: es independiente y utiliza hardware dedicado.
+Costo: el costo inicial de las actualizaciones de hardware y software puede ser alto.
+Cantidad de PC: se pueden proteger varias PC.
+Requisitos de rendimiento: poco impacto en el rendimiento de la PC.
+NOTA: en una red segura, si el rendimiento de la PC no es un problema, habilite el firewall interno del sistema operativo para obtener seguridad adicional. Es posible que algunas aplicaciones no funcionen correctamente, a menos que se configure el firewall para estas como corresponde.
+
+6.4.1.7 Appliances de Internet
+Un appliance de Internet también se denomina “Net appliance”, “appliance inteligente” o “appliance de información”. Algunos ejemplos de dispositivos appliance de Internet son los televisores, las consolas de juegos, los reproductores de Blu-ray y los reproductores de streaming media. El dispositivo está diseñado para la función específica y cuenta con hardware incorporado para conexión a Internet. La conexión a Internet puede ser por cable o inalámbrica. Los appliances de Internet incluyen una CPU y una RAM que admitan correo electrónico, navegación en la Web y juegos, así como streaming de video y redes sociales, como se muestra en la ilustración.
+
+6.4.1.8 Adquisición de dispositivos de networking originales
+Los problemas de PC y de red pueden estar relacionados con componentes ilegítimos. Las diferencias estéticas entre un producto original y uno ilegítimo pueden ser sutiles. También puede haber diferenciadores de rendimiento entre los productos originales y los ilegítimos. Muchos fabricantes tienen equipos de ingenieros familiarizados con estos diferenciadores.
+
+Los productos ilegítimos presentan un riesgo tanto para la red como para la salud y la seguridad personal. El tráfico de equipos de computación y de red ilegítimos es un delito que implica sanciones graves. En 2008, el exdueño de una compañía de informática fue condenado a 30 meses en prisión y se le ordenó que pagara una gran suma de dinero en concepto de indemnización como resultado de su condena por haber traficado componentes de PC ilegítimos. Este tipo de casos sirve como recordatorio importante para que los clientes tengan en cuenta el riesgo de comprar componentes fuera de los canales de distribución y ventas autorizados del fabricante.
+
+Para asegurarse de obtener productos originales, tenga en cuenta los siguientes puntos al realizar pedidos o solicitar presupuestos:
+
+Siempre compre equipos directamente de canales autorizados.
+Asegúrese de que el equipo sea nuevo, original y no sea un producto usado.
+Desconfíe si los precios parecen demasiado buenos para ser reales.
+El producto se ofrece con un descuento mucho mayor que los productos originales. Estos descuentos pueden ser de hasta un 70 % o un 90 %.
+Verifique que el equipo incluya una licencia de software válida.
+Verifique que el equipo incluya una garantía total.
+Pregunte si el equipo incluye soporte técnico.
+El producto parece tener las etiquetas, los logotipos y las marcas comerciales apropiadas, pero el rendimiento y el aspecto son de calidad inferior en comparación con los productos originales.
+Desconfíe si el envoltorio parece de calidad inferior, no parece original, está alterado o fue utilizado.
+No haga negocios con proveedores que le insistan en hacer lo siguiente:
+
+Hacer su pedido de inmediato para evitar adquirir el producto a mayor precio.
+Aprovechar una oferta especial que está por finalizar.
+Reservar los últimos productos que quedan en existencias.
+Comprar productos especiales del OEM.
+Aprovechar las ofertas recibidas por Internet, correo electrónico y telemarketing en las que los representantes cobran a domicilio o en el momento de la entrega.
+
+6.4.2 Cables y conectores
+6.4.2.1 Consideraciones para el cableado de una red
+Como se muestra en las ilustraciones, existe una gran variedad de cables de red. Los cables coaxiales y los de par trenzado utilizan cobre para transmitir datos. Los cables de fibra óptica utilizan vidrio o plástico para transmitir datos. Estos cables difieren en ancho de banda, tamaño y costo. Es necesario saber qué tipo de cable se debe utilizar en distintas situaciones para instalar el cable correcto para el trabajo en cuestión. También debe poder resolver y reparar los problemas que pueda encontrar. Seleccione el tipo de cable que proporcione más beneficios y que sea más rentable para los usuarios y para los servicios que se conectarán a la red.
+
+Costo
+
+Al diseñar una red, el costo es un factor que se debe tener en cuenta. La instalación de cables es costosa, pero después de este gasto único, el mantenimiento de una red conectada por cable suele ser económico.
+
+Seguridad
+
+Una red conectada por cable suele ser más segura que una red inalámbrica. Los cables de una red conectada por cable se instalan, generalmente, en paredes y cielorrasos, y, por lo tanto, no son de fácil acceso. Es más fácil acceder sin autorización a las señales de una red inalámbrica que a las de una red conectada por cable. Las señales de radio están disponibles para cualquier persona que posea un receptor. Para que una red inalámbrica sea tan segura como una red conectada por cable, se debe utilizar autenticación y encriptación.
+
+Diseño para el futuro
+
+Muchas organizaciones instalan la mejor categoría de cable disponible. Esto asegura que las redes estén preparadas si en el futuro se necesita un ancho de banda mayor. Para evitar gastos de instalación de cables elevados más adelante, el cliente y usted deben decidir si el costo de instalación de un cable de mayor categoría es necesario.
+
+Conexión inalámbrica
+
+Es posible que se necesite una solución inalámbrica en lugares donde no se pueden instalar cables, por ejemplo, un edificio histórico y antiguo donde los códigos de construcción no permitan modificaciones estructurales.
+
+6.4.2.2 Cables coaxiales
+El cable coaxial, que se muestra en la Figura 1, suele estar hecho de cobre o aluminio. Lo utilizan las compañías de televisión por cable para prestar su servicio y para conectar los diversos componentes que conforman los sistemas de comunicación satelitales.
+
+El cable coaxial (o coax) transmite los datos en forma de señales eléctricas. Este cable proporciona un blindaje mejorado en comparación con el de par trenzado no blindado (UTP, unshielded twisted-pair), por lo que posee una mejor relación señal-ruido y, por lo tanto, puede transmitir más datos. Sin embargo, el cableado de par trenzado reemplazó al coax en las conexiones LAN debido a que, en comparación con el UTP, el cable coaxial es físicamente más difícil de instalar, más costoso y menos útil para la resolución de problemas.
+
+El cable coaxial está cubierto por un revestimiento, como se muestra en la Figura 2. Existen varios tipos de cable coaxial:
+
+Thicknet (10BASE5): se utiliza en redes y se opera a 10 Mb/s con una distancia máxima de 1640,4 ft (500 m).
+Thinnet (10BASE2): se utiliza en redes y se opera a 10 Mb/s con una distancia máxima de 607 ft (185 m).
+RG-59: el más utilizado para la televisión por cable en los Estados Unidos.
+RG-6: cable de mejor calidad que el RG-59, con mayor ancho de banda y menor susceptibilidad a interferencias.
+El cableado de un proveedor de servicio de cable en las instalaciones del cliente es coax. Se utilizan varios métodos para conectar cables coaxiales. Dos tipos de conexión comunes, como se muestra en la Figura 3, son los siguientes:
+
+Conector serie F: se utiliza principalmente en aplicaciones de televisión por cable y de antenas de hasta 1 GHz.
+Conector BNC: está diseñado para uso militar. También se utiliza en aplicaciones de video y RF de hasta 2 GHz.
+El conector serie F tiene un patrón de roscas estándar, pero también hay conectores a presión disponibles. Los conectores BNC utilizan un conector de cierre por torsión. El cable coaxial no tiene un ancho de banda máximo específico, y el tipo de tecnología de señalización utilizada determina la velocidad y los factores limitantes.
+
+6.4.2.3 Cables de par trenzado
+El par trenzado es un tipo de cableado de cobre que se utiliza para comunicaciones telefónicas y para la mayoría de las redes Ethernet. Un par de cables forma un circuito que transmite datos. El par está trenzado para brindar protección contra crosstalk, que es el ruido que generan pares de cables adyacentes en el cable. Los pares de cables de cobre se recubren con un aislamiento plástico codificado por color y se trenzan. Los manojos de cables trenzados están protegidos por un revestimiento exterior. En la Figura 1, se muestra un cable de par trenzado.
+
+Cuando fluye electricidad a través de un cable de cobre, se forma un campo magnético alrededor de este. Un circuito tiene dos cables. Los dos cables del circuito tienen campos magnéticos con cargas opuestas. Cuando los dos cables del circuito están cerca uno del otro, los campos magnéticos se anulan entre sí. Esto se denomina “efecto de anulación”. Sin el efecto de anulación, las comunicaciones de red se vuelven lentas debido a la interferencia que causan los campos magnéticos.
+
+Existen dos tipos básicos de cables de par trenzado:
+
+UTP: el cable de par trenzado no blindado (UTP, unshielded twisted-pair) tiene dos o cuatro pares de cables. Este tipo de cable depende únicamente del efecto de anulación que producen los pares trenzados, que limita la degradación de la señal que causan la interferencia electromagnética (EMI, Electromagnetic Interference) y las interferencias de radiofrecuencia (RFI, radio frequency interference). El UTP es el cableado que más se utiliza en redes. Los cables UTP tienen una longitud de hasta 330 ft (100 m).
+STP: en un cable de par trenzado blindado (STP, Shielded twisted-pair), cada par de cables está cubierto por una hoja metálica para proteger mejor los cables de los ruidos. Entonces, se cubren cuatro pares de cables con una malla de cobre tejida o con una hoja metálica. El STP reduce el ruido eléctrico que proviene del cable. Además, reduce las EMI y RFI que se producen fuera del cable.
+Aunque el STP evita la interferencia mejor que el UTP, el STP es más costoso, debido a la protección adicional que brinda, además de ser más difícil de instalar por su grosor. Además, el blindaje metálico debe estar conectado a tierra en ambos extremos. Si no se conecta a tierra correctamente, el blindaje actúa como antena y capta señales no deseadas. El STP se utiliza principalmente fuera de Norteamérica.
+
+Calificación de categoría
+
+Los cables de par trenzado vienen en varias categorías (Cat). Estas categorías se basan en la cantidad de hilos que hay en el cable y la cantidad de vueltas de esos hilos.
+
+El tamaño de la red determina el tipo de cable de red que se va a utilizar. En la actualidad, la mayoría de las redes están conectadas por cables de par trenzado de cobre. En la Figura 2, se muestran las características de un cable de par trenzado.
+
+Los edificios de oficinas nuevos o renovados suelen tener algún tipo de cableado UTP que conecta todas las oficinas a un punto central denominado Instalación de distribución principal (MDF, Main Distribution Facility). El límite de distancia de un cableado UTP que se utiliza para datos es de 330 ft (100 m). Los tendidos de cables que exceden esta distancia necesitan un switch, un repetidor o un hub para extender la conexión a la MDF.
+
+Los cables que están instalados dentro de paredes y cielorrasos de edificios deben ser clasificados como Plenum. El cable Plenum es seguro para ser instalado entre un cielorraso caído y el cielorraso estructural de un edificio por donde circula aire. Los cables con clasificación Plenum están hechos de un plástico especial que retarda el fuego y que produce menos humo que otros tipos de cable.
+
+NOTA: los cables Cat 3 utilizan un conector RJ-11 de 6 pines, mientras que el resto de los cables de par trenzado utilizan un conector RJ-45 de 8 pines, como se muestra en la Figura 3.
+
+Esquemas de cableado
+
+Existen dos patrones o esquemas de cableado diferentes, llamados T568A y T568B. Cada esquema de cableado define el diagrama de pines o el orden de las conexiones de cable, en el extremo del cable. Ambos esquemas son similares, excepto en que el orden de terminación de dos de los cuatro pares está invertido.
+
+En una instalación de red, se debe seleccionar y seguir uno de los dos esquemas de cableado (T568A o T568B). Es importante utilizar el mismo esquema de cableado para todas las terminaciones del proyecto. Si trabaja en una red existente, utilice el esquema de cableado que ya existe.
+
+Al utilizar los esquemas de cableado T568A y T568B, se pueden crear dos tipos de cables: un cable directo y un cable cruzado. Estos dos tipos de cables pueden encontrarse en las instalaciones de datos.
+
+Cable directo
+
+El cable directo es el tipo de cable más común. Asigna un cable a los mismos pines en ambos extremos del cable. Es decir, si se usa T568A en un extremo del cable, también se usa T568A en el otro extremo. Si se usa T568B en un extremo del cable, se usa T568B en el otro. Esto significa que el orden de las conexiones (el diagrama de pines) de cada color es exactamente el mismo en ambos extremos.
+
+Dos dispositivos conectados directamente y que utilizan pines diferentes para transmitir y recibir se denominan “dispositivos diferentes”. Requieren un cable directo para intercambiar datos. Existen dos dispositivos diferentes que requieren un cable directo: puerto de switch a puerto de router y puerto de hub a PC.
+
+Cable cruzado
+
+El cable cruzado utiliza ambos esquemas de cableado. T568A en un extremo del cable y T568B en el otro extremo del mismo cable. Esto implica que el orden de las conexiones en un extremo del cable no coincide con el orden de las conexiones en el otro.
+
+Los dispositivos conectados directamente y que utilizan los mismos pines para transmitir y recibir se conocen como “dispositivos similares”. Estos requieren un cable cruzado para intercambiar datos Algunos dispositivos similares que requieren un cable cruzado son los siguientes:
+
+Puerto de switch a puerto de switch
+Puerto de switch a puerto de hub
+Puerto de hub a puerto de hub
+Puerto de router a puerto de router
+PC a puerto de router
+PC a PC
+Si se utiliza el tipo de cable incorrecto, no funcionará la conexión entre los dispositivos de red.
+
+Algunos dispositivos detectan automáticamente qué pines se utilizan para transmitir y recibir, y ajustan sus conexiones internas respectivamente.
+
+6.4.2.6 Cables de fibra óptica
+La fibra óptica es un medio de vidrio o plástico que transmite información mediante el uso de luz. El cable de fibra óptica posee una o más fibras ópticas cubiertas por un revestimiento, como se muestra en la ilustración. Debido a que utiliza luz para transmitir señales, el cable de fibra óptica no se ve afectado por la EMI ni por la RFI. Todas las señales se convierten en pulsos de luz cuando ingresan al cable y se convierten en señales eléctricas cuando salen de este. Esto significa que el cable de fibra óptica puede entregar señales que son más claras, puede recorrer una mayor distancia y tiene un mayor ancho de banda que el cable de cobre o de otros metales.
+
+Los cables de fibra óptica pueden alcanzar distancias de varias millas o kilómetros antes de que se deba regenerar la señal. Los láseres o diodos emisores de luz (LED) generan pulsos de luz que se utilizan para representar los datos transmitidos como bits en los medios. El ancho de banda alcanza velocidades de 100 GB/s y aumenta a medida que se desarrollan y adoptan estándares.
+
+La velocidad de los datos transmitidos mediante un cable de fibra óptica se ve limitada por los dispositivos conectados al cable, así como por las impurezas dentro del cable de fibra. Los dispositivos electrónicos semiconductores, denominados “fotodiodos”, detectan los pulsos de luz y los convierten en voltajes que pueden reconstruirse en tramas de datos.
+
+El cable de fibra óptica, por lo general, es más costoso que el de cobre, y los conectores son más costosos y más difíciles de ensamblar. Los conectores comunes para redes de fibra óptica son los siguientes:
+
+SC: casquillo de 2,5 mm que utiliza un conector a presión que se traba con un simple movimiento de doble efecto.
+ST: casquillo de 2,5 mm que utiliza un conector de conexión tipo bayoneta que se acciona por resorte.
+LC: casquillo de 1,25 mm que utiliza un conector a presión que se traba con un simple movimiento de doble efecto.
+Estos tres tipos de conectores de fibra óptica son simplex, lo que permite que los datos se desplacen solo en una dirección. Por lo tanto, se necesitan dos cables para que los datos se desplacen en ambas direcciones.
+
+Existen dos tipos de cable de fibra óptica de vidrio:
+
+Multimodo: es un cable que tiene un núcleo más grueso que el cable monomodo. Es más fácil de fabricar, puede utilizar fuentes de luz más simples (LED) y funciona bien a distancias de hasta 6560 ft (2 km). Generalmente, utiliza LED como fuente de luz dentro de las LAN o para distancias de 200 m dentro de una red de campus.
+Monomodo: es un cable que tiene un núcleo muy fino. Es más difícil de fabricar, utiliza láseres como fuente de luz y puede transmitir señales a una distancia de hasta 62,14 mi (100 km). Generalmente, utiliza láseres como fuente de luz dentro de backbones de campus para distancias de varios miles de metros.
+
+6.5 Topologías de red
+6.5.1 Topologías
+6.5.1.1 Topologías lógicas y físicas
+Topologías lógicas
+
+Una topología lógica describe la forma en que los hosts acceden al medio y se comunican en la red. Los dos tipos de topologías lógicas más comunes son el broadcast y el paso de tokens. En una topología de broadcast, un host transmite un mensaje al resto de los hosts en el mismo segmento de red. No hay un orden establecido en el que los hosts deban transmitir datos. Los mensajes se envían siguiendo la lógica "primero en entrar, primero en salir" (FIFO, First In, First Out).
+
+El paso de tokens controla el acceso a la red mediante el paso de un token electrónico a cada host de manera secuencial. Si un host quiere transmitir datos, el host agrega datos y una dirección de destino al token, que es una trama especialmente formateada. A continuación, el token viaja hacia el host que posee la dirección de destino. El host de destino extrae los datos de la trama. Si el host no tiene datos para enviar, el token pasa a otro host.
+
+Topologías físicas
+
+Una topología física define la forma en que las PC, las impresoras y otros dispositivos se conectan a una red. En la ilustración, se muestran seis topologías físicas.
+
+Bus
+
+En una topología de bus, cada PC se conecta a un cable común. El cable conecta una PC a otra, como una línea de autobús que recorre una ciudad. El cable tiene una pequeña tapa instalada en el extremo denominada “terminador”. El terminador evita que las señales reboten y provoquen errores de red.
+
+Anillo
+
+En una topología en anillo, los hosts están conectados en un anillo o circulo físico. Debido a que la topología de anillo no tiene comienzo ni fin, el cable no está terminado. El token viaja por el anillo y se detiene en cada host. Si un host quiere transmitir datos, el host agrega datos y una dirección de destino al token. El token continua viajando por el anillo hasta que se detiene en el host que posee la dirección de destino. El host de destino extrae los datos del token.
+
+Estrella
+
+La topología en estrella tiene un punto de conexión central, que, por lo general, es un dispositivo como un hub, un switch o un router. Cada host en una red tiene un segmento de cable que conecta el host directamente al punto de conexión central. La ventaja de la topología en estrella es que es de fácil resolución de problemas. Cada host está conectado al dispositivo central con su propio cable. Si se presenta un problema en ese cable, solo se ve afectado ese host. El resto de la red continúa funcionando.
+
+Jerárquica
+
+Una topología en estrella jerárquica o extendida es una red en estrella con un dispositivo de networking adicional conectado al dispositivo de networking principal. En general, un cable de red se conecta a un switch, y después se conectan otros switches al primero. Las redes más grandes, como las de empresas y universidades, utilizan la topología en estrella jerárquica.
+
+Malla
+
+La topología de malla conecta todos los dispositivos entre sí. Cuando todos los dispositivos están conectados entre sí, la falla de un cable o dispositivo en la conexión no afecta a la red. La topología de malla se utiliza en las WAN que interconectan redes LAN.
+
+Híbrida
+
+Una topología híbrida es una combinación de dos o más topologías de red básicas, como la de bus de estrella o la de anillo en estrella. La ventaja de una topología híbrida es que se puede implementar en diferentes entornos de red.
+
+El tipo de topología determina las capacidades de la red, como la facilidad de instalación, la velocidad y las longitudes del cable. La arquitectura LAN describe la topología física y la topología lógica que se utilizan en una red.
+
+6.5.1.3 Determinación de la topología de la red
+Para poder determinar la topología de la red correctamente, es necesario entender las necesidades del cliente y definir la disposición general de la nueva red. Estas son las decisiones que se deben tomar con el cliente en relación con la red:
+
+Estándares de cable y estándares inalámbricos
+Capacidad de expansión
+Cantidad de usuarios y ubicación de estos
+La cantidad de usuarios y el crecimiento que se espera en el futuro determinan las topologías física y lógica iniciales de la red. Se debe llevar a cabo una inspección al comienzo del proyecto, denominada “relevamiento del sitio”. Un relevamiento del sitio es una inspección física del edificio que ayuda a determinar una topología física básica. Cree una lista de comprobación para registrar las necesidades del cliente, a fin de determinar la topología física:
+
+Ubicación de las PC de los usuarios
+Posición de los equipos de red, como switches y routers
+Posición de los servidores
+Un plano de planta o un anteproyecto sirven para determinar la disposición física del equipo y de los cables. La disposición física suele basarse en el espacio disponible, la alimentación, la seguridad y el sistema de aire acondicionado. En la ilustración, se muestra una topología de red típica. Si no se encuentran disponibles un plano de planta o un anteproyecto, haga un dibujo que detalle dónde se ubicarán los dispositivos de red, y que incluya la ubicación de la sala de servidores, las impresoras, las estaciones terminales y los tendidos de cable. Este dibujo se puede utilizar para ayudar al cliente a tomar la decisión final con respecto a la disposición.
+
+6.6 Estándares Ethernet
+6.6.1 Conexiones por cable e inalámbricas
+6.6.1.1 Organismos de estandarización
+Existen varios organismos internacionales responsables de establecer estándares de networking. Los fabricantes se basan en los estándares para desarrollar tecnología, en especial, tecnologías de comunicación y de networking. Los estándares garantizan que los dispositivos de un fabricante sean compatibles con los dispositivos de otro fabricante que utilicen la misma tecnología. Los grupos de estándares se encargan de crear, examinar y actualizar estándares. Estos estándares se aplican al desarrollo de tecnología para cumplir con las demandas de mayor ancho de banda, comunicación eficaz y servicio confiable.
+
+En la ilustración, se brinda información sobre varios organismos de estandarización. 
+
+6.6.1.2 IEEE 802.3
+Los protocolos Ethernet describen las normas que controlan el modo en que se establece la comunicación en una red Ethernet. Para asegurar que todos los dispositivos Ethernet sean compatibles entre sí, el IEEE desarrolló estándares que los fabricantes y programadores deben respetar durante el desarrollo de dispositivos Ethernet.
+
+La arquitectura de Ethernet se basa en el estándar IEEE 802.3. El estándar IEEE 802.3 especifica que todas las redes implementen el método de control de acceso de Acceso múltiple por detección de portadora y detección de colisiones (CSMA/CD, Carrier Sense Multiple Access with Collision Detection).
+
+En el método CSMA/CD, todas las estaciones terminales escuchan el cable de red para detectar espacio libre para enviar datos. Este proceso es similar a esperar a escuchar el tono de marcado del teléfono antes de marcar un número. Cuando la estación terminal detecta que no hay ningún otro host transmitiendo, intenta enviar datos. Si ninguna otra estación envía datos al mismo tiempo, esta transmisión llega a la PC de destino sin inconvenientes. Si otra estación terminal observó la misma señal libre y transmitió al mismo tiempo, se produce una colisión en los medios de red, como se muestra en la ilustración.
+
+La primera estación que detecta la colisión, o la duplicación de voltaje, envía una señal de congestión que les indica a todas las estaciones que interrumpan la transmisión y ejecuten un algoritmo de postergación. El algoritmo de postergación calcula los tiempos aleatorios en los que la estación terminal intentará volver a transmitir. Este tiempo aleatorio suele ser de 1 o 2 ms (milisegundos). Esta secuencia tiene lugar cada vez que se produce una colisión en la red y puede reducir la transmisión de Ethernet en hasta un 40%.
+
+6.6.1.3 Tecnologías Ethernet
+El estándar IEEE 802.3 define varias implementaciones físicas que admiten Ethernet. En la ilustración, se resumen los estándares de los diferentes tipos de cables Ethernet.
+
+10BASE-T es una tecnología Ethernet que utiliza una topología en estrella. 10BASE-T es una arquitectura Ethernet de uso extendido cuyo nombre indica sus características:
+
+El número 10 representa una velocidad de 10 Mb/s.
+“BASE” representa la transmisión de banda base. En la transmisión de banda base, todo el ancho de banda de un cable es utilizado por un tipo de señal.
+La letra T representa el cableado de cobre de par trenzado.
+
+6.6.1.4 IEEE 802.11
+El estándar IEEE 802.11 especifica la conectividad para las redes inalámbricas. IEEE 802.11, o Wi-Fi, hace referencia a un grupo colectivo de estándares, como se muestra en la ilustración. Estos protocolos especifican las frecuencias, velocidades y demás capacidades de los diferentes estándares Wi-Fi.
+
+6.7 Modelos de datos OSI y TCP/IP
+6.7.1 Modelos de referencia
+6.7.1.1 TCP/IP
+Un modelo de arquitectura es un marco de referencia común que se utiliza para explicar las comunicaciones de Internet y desarrollar protocolos de comunicación. Este modelo separa las funciones de los protocolos en capas fáciles de administrar. Cada capa lleva a cabo una función específica en el proceso de comunicación por medio de una red.
+
+El modelo TCP/IP fue creado por investigadores del Departamento de Defensa (DoD, Department of Defense) de los EE. UU. La suite de protocolos TCP/IP es el estándar predominante para el transporte de datos a través de redes e Internet. Está formado por capas que llevan a cabo las funciones necesarias para preparar los datos para su transmisión a través de una red. En la tabla se muestran las cuatro capas del modelo TCP/IP.
+
+El mensaje comienza en la capa superior de aplicación y desciende por las capas TCP/IP hasta la capa inferior de acceso a la red. A medida que el mensaje desciende por cada capa, se le agrega información de encabezado y, luego, se transmite. Una vez que llega a destino, el mensaje vuelve a ascender capa por capa. A medida que el mensaje asciende por las capas hacia el destino, se elimina la información de encabezado que se había agregado.
+
+Protocolos de la capa de aplicación
+
+Los protocolos de la capa de aplicación proporcionan servicios de red a aplicaciones de usuarios, como exploradores Web y programas de correo electrónico. Algunos de los protocolos comunes que operan en la capa de aplicación son HTTP, Telnet, FTP, SMTP, DNS y HTML.
+
+Protocolos de la capa de transporte
+
+Los protocolos de la capa de transporte proporcionan una administración de extremo a extremo de los datos. Una de las funciones de estos protocolos es dividir los datos en segmentos fáciles de administrar para simplificar su transporte a través de la red. Algunos de los protocolos comunes que operan en la capa de transporte son TCP y UDP.
+
+Protocolos de la capa de Internet
+
+Los protocolos de la capa de Internet proporcionan conectividad entre hosts de la red. Algunos de los protocolos comunes que operan en la capa de Internet son IP e ICMP.
+
+Protocolos de la capa de acceso a la red
+
+Los protocolos de la capa de acceso a la red describen los estándares que utilizan los hosts para acceder a los medios físicos. Dentro de esta capa se definen los estándares y las tecnologías Ethernet IEEE 802.3, como CSMA/CD y 10BASE-T.
+
+6.7.1.2 OSI
+A principios de los años ochenta, la Organización Internacional para la Estandarización (ISO, International Standards Organization) desarrolló el modelo de referencia de interconexión de sistemas abiertos (OSI, Open Systems Interconnect) para estandarizar la forma en que se comunican los dispositivos en una red. Este modelo representó un gran paso en pos de asegurar la interoperabilidad entre dispositivos de red.
+
+El modelo OSI divide las comunicaciones de red en siete capas diferenciadas. Si bien existen otros modelos, actualmente la mayoría de los proveedores de red desarrollan sus productos utilizando este marco.
+
+Los sistemas que implementan un comportamiento de protocolo que consta de una serie de estas capas se denominan “stacks de protocolos”. Los stacks de protocolos pueden implementarse en hardware o en software, o en una combinación de ambos. Por lo general, solo se implementan las capas inferiores en hardware, y las capas superiores, en software. Cada capa es responsable de parte del procesamiento de preparación de datos para la transmisión en la red. En la tabla se muestra qué hace cada una de las capas del modelo OSI.
+
+Cuando se transfieren datos en el modelo OSI, se dice que realizan un viaje virtual descendente por las capas del modelo OSI de la PC emisora y un viaje ascendente por las capas del modelo OSI de la PC receptora.
+
+Cuando un usuario envía datos, como un correo electrónico, el proceso de encapsulación comienza en la capa de aplicación. La capa de aplicación proporciona acceso a la red a las aplicaciones. La información fluye a través de las tres capas superiores y se considera datos cuando llega hasta la capa de transporte.
+
+En la capa de transporte, los datos se dividen en segmentos más fáciles de administrar, denominados “unidades de datos de protocolo” (PDU, protocol data units), para un transporte ordenado a través de la red. Las PDU son los datos a medida que se trasladan de una capa del modelo OSI a otra. La PDU de la capa de transporte también contiene la información que se utiliza para el transporte confiable de datos, como números de puertos, números de secuencia y números de acuse de recibo.
+
+En la capa de red, cada segmento de la capa de transporte se transforma en un paquete. Los paquetes contienen direccionamiento lógico y demás información de control de Capa 3.
+
+En la capa de enlace de datos, cada paquete de la capa de red se transforma en una trama. La trama contiene la dirección física e información de corrección de errores.
+
+En la capa física, la trama se transforma en bits. Estos bits se transmiten uno a uno a través del medio de red.
+
+En la PC receptora, el proceso de desencapsulación invierte el proceso de encapsulación. Los bits llegan a la capa física del modelo OSI de la PC receptora. El proceso ascendente por el modelo OSI de la PC receptora lleva los datos a la capa de aplicación, donde un programa de correo electrónico muestra el mensaje de correo electrónico.
+
+NOTA: La mnemotécnica puede ayudarlo a recordar las siete capas del modelo OSI. Algunos ejemplos incluyen “Algunas Personas Simplemente Trotan Rápido para Estar en Forma” y “Felipe Espera Revisar la Transferencia del Sistema Para Asegurarse”.
+
+6.7.1.3 Comparación entre los modelos OSI y TCP/IP
+El modelo OSI y el modelo TCP/IP son modelos de referencia que se utilizan para describir el proceso de comunicación de datos. El modelo TCP/IP se utiliza específicamente para la suite de protocolos TCP/IP, y el modelo OSI se utiliza para el desarrollo de comunicación estándar para equipos y aplicaciones de diferentes proveedores.
+
+El modelo TCP/IP realiza el mismo proceso que el modelo OSI, pero utiliza cuatro capas en lugar de siete. En la tabla se muestra una comparación entre las capas de los dos modelos.
+
+6.8 Conexión de PC a una red
+6.8.1 Pasos para la instalación de una red
+6.8.1.1 Lista de finalización de instalación de una red
+Comprender claramente todos los pasos necesarios para el armado físico de una red mejora el nivel de éxito de un proyecto. Es posible que deba instalar tarjetas de red, dispositivos de red conectados por cable o inalámbricos y configurar equipos de red.
+
+Para instalar una red inalámbrica, puede utilizar un punto de acceso inalámbrico o un dispositivo multipropósito. Linksys E2500 es un dispositivo multipropósito que proporciona capacidades tanto de router como de punto de acceso. Debe decidir dónde instalará los puntos de acceso para que proporcionen el máximo rango de conectividad.
+
+Una vez que determina la ubicación de todos los dispositivos de red, puede proceder a la instalación de los cables de red. Si instalará el cable usted mismo, asegúrese de contar con todos los materiales necesarios en el lugar, así como con un plano de la topología física de la red.
+
+Para crear físicamente una red, siga estos pasos:
+
+Paso 1. Asegúrese de que todas las ubicaciones de los puertos Ethernet de pared estén correctamente señalizadas y cumplan con los requisitos actuales y futuros del cliente. Para instalar el cable en cielorrasos y detrás de las paredes, debe realizar un tendido del cable: Una persona tira del cable, mientras que otra inserta cable a través de las paredes. Asegúrese de rotular los extremos de todos los cables. Observe un esquema de rotulación previamente implementado o siga las pautas descritas en TIA/EIA 606-A.
+
+Paso 2. Una vez que se haya realizado la terminación de ambos extremos de los cables, utilice un comprobador de cables para asegurarse de que no haya cortocircuitos ni interferencias.
+
+Paso 3. Utilice un plano de planta para identificar las ubicaciones de los puntos de acceso que permitan la máxima cobertura. El lugar más conveniente para un punto de acceso inalámbrico es en el centro del área que desea abarcar, con una línea de vista entre los dispositivos inalámbricos y el punto de acceso.
+
+Paso 4. Conecte el punto de acceso a la red existente.
+
+Paso 5. Asegúrese de que las interfaces de red estén instaladas correctamente en las computadoras de escritorio, las computadoras portátiles y las impresoras de red. Una vez que se instalaron las interfaces de red, configure el software de cliente y la información de dirección IP en todos los dispositivos.
+
+Paso 6. Asegúrese de instalar los switches y routers en una ubicación segura y centralizada. Todas las conexiones LAN terminan en esta área. En una red doméstica, es posible que deba instalar estos dispositivos en distintas ubicaciones o que utilice un solo dispositivo.
+
+Paso 7. Instale un cable de conexión Ethernet entre la conexión de la pared y cada uno de los dispositivos de red. Verifique que en todas las interfaces de red y los puertos de todos los dispositivos de red que estén conectados a un dispositivo esté encendida la luz de enlace.
+
+Paso 8. Una vez que todos los dispositivos estén conectados y todas las luces de enlace estén encendidas, pruebe la conectividad de la red. Utilice el comando ipconfig /all para ver la configuración IP de cada estación de trabajo. Utilice el comando ping para probar la conectividad básica. Debe ser capaz de hacer ping a otras PC en la red, incluido el gateway predeterminado y las PC remotas. Una vez confirmada la conectividad básica, configure y pruebe las aplicaciones de red, como el correo electrónico y el explorador Web.
+
+6.8.2 Tarjetas de red
+6.8.2.1 Elección de una NIC
+Para realizar una conexión a una red, se necesita una NIC. La NIC puede venir preinstalada en la PC, o es posible que deba adquirirla por su cuenta. Debe tener la capacidad de actualizar, instalar y configurar componentes cuando un cliente solicita mayor velocidad o la adición de una nueva funcionalidad a una red. Si el cliente desea agregar PC adicionales o funcionalidad inalámbrica, debe ser capaz de recomendarle equipos que se adapten a sus necesidades, como puntos de acceso inalámbricos y tarjetas de red inalámbrica. Los equipos que recomiende deben funcionar con los equipos y el cableado existentes. De lo contrario, deberá actualizarse la infraestructura existente. En raras ocasiones, es posible que deba actualizar el controlador. Puede utilizar el disco del controlador que viene con la motherboard o la tarjeta adaptadora, o puede proporcionar un controlador que haya descargado del fabricante.
+
+Existen muchos tipos de interfaces de red, como se muestra en la ilustración:
+
+La mayoría de las interfaces de red para computadoras de escritorio están integradas a la motherboard o son tarjetas de expansión que se instalan en una ranura de expansión.
+Las interfaces de red de la mayoría de las computadoras portátiles están integradas a la motherboard o se instalan en una ranura de expansión PC Card o ExpressBus.
+Los adaptadores de red USB se conectan a un puerto USB y pueden utilizarse tanto en computadoras de escritorio como portátiles.
+Antes de adquirir una NIC, averigüe la velocidad, el factor de forma y las capacidades de la tarjeta. Asimismo, revise la velocidad y las capacidades del hub o switch que está conectado a la PC.
+
+Las NIC Ethernet negocian automáticamente la máxima velocidad común entre la NIC y el otro dispositivo. Por ejemplo, si posee una NIC de 10/100 Mb/s y un hub de solo 10 Mb/s, la NIC funciona a 10 Mb/s. Si posee una NIC de 10/100/1000 Mb/s y un switch que solo funciona a 100 Mb/s, la NIC funciona a 100 Mb/s.
+
+Si posee un switch Gigabit, es muy probable que deba adquirir una NIC Gigabit para que coincida la velocidad. Si se planea actualizar la red a Gigabit Ethernet en el futuro, asegúrese de adquirir NIC que admitan esa velocidad. Como los costos pueden variar ampliamente, debe seleccionar las NIC que se adapten a las necesidades del cliente.
+
+Para realizar una conexión a una red inalámbrica, la PC debe contar con un adaptador inalámbrico. Los adaptadores inalámbricos se comunican con otros dispositivos inalámbricos, como PC, impresoras o puntos de acceso inalámbricos. Antes de adquirir un adaptador inalámbrico, asegúrese de que sea compatible con los demás equipos inalámbricos que ya están instalados en la red. Verifique que el adaptador inalámbrico posea el factor de forma correcto para la PC del cliente. Los adaptadores inalámbricos USB pueden utilizarse en cualquier computadora de escritorio o portátil que posea un puerto USB.
+
+Las NIC inalámbricas están disponibles en diferentes formatos y con distintas capacidades. Seleccione la NIC inalámbrica según el tipo de red inalámbrica instalada:
+
+Las NIC 802.11b pueden utilizarse en redes 802.11g.
+Las NIC 802.11a pueden utilizarse solo en redes compatibles con 802.11a.
+Las NIC 802.11a de doble banda, 802.11b y 802.11g pueden utilizarse en redes 802.11n.
+
+6.8.2.3 Instalación y actualización de una NIC
+Para instalar una NIC en una computadora de escritorio, debe quitar la cubierta del gabinete. Luego, quite la cubierta de la ranura PCI o de la ranura PCI Express disponible. Una vez que la NIC esté bien instalada, vuelva a colocar la cubierta del gabinete. Las NIC inalámbricas poseen una antena conectada a la parte posterior de la tarjeta o fijada mediante un cable, que puede cambiarse de posición para obtener una recepción de señal óptima. Debe conectar y acomodar la antena.
+
+A veces, los fabricantes publican nuevo software de controlador para una NIC. Es posible que el nuevo controlador mejore la funcionalidad de la NIC o que resulte necesario para la compatibilidad con el sistema operativo.
+
+Al instalar un controlador nuevo, deshabilite el software antivirus para asegurarse de que la instalación del controlador se realice correctamente. Algunos antivirus detectan las actualizaciones de controladores como posibles ataques de virus. Instale solo un controlador a la vez, de lo contrario, algunos procesos de actualización pueden generar conflictos. Una práctica recomendada consiste en cerrar todas las aplicaciones que estén en ejecución, a fin de asegurar que ningún archivo relacionado con la actualización del controlador esté en uso. Antes de actualizar un controlador, visite el sitio Web del fabricante. En muchos casos, es posible descargar un archivo de controlador ejecutable autoextraíble que instala o actualiza automáticamente el controlador.
+
+Una vez que la NIC y el controlador estén instalados y configurados, es posible que deba configurar otros parámetros del OS. Es posible que también deba instalar un módem para conectarse a Internet. De lo contrario, simplemente conecte la PC a la red existente.
+
+También es posible actualizar manualmente el controlador de una NIC. En Windows 7 y Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Administrador de dispositivos
+
+En Windows XP, utilice la siguiente ruta:
+
+Inicio > Panel de control > Sistema >; luego, haga clic en la ficha Hardware > Administrador de dispositivos.
+
+Para ver los adaptadores de red instalados en Windows 7, haga clic en la flecha que se encuentra junto a la categoría. En Windows Vista y Windows XP, haga clic en el símbolo + que se encuentra junto a la categoría Adaptadores de red. Para ver y modificar las propiedades del adaptador, haga doble clic en el adaptador. En la ventana Propiedades del adaptador, seleccione la ficha Controlador.
+
+NOTA: en algunas ocasiones, el proceso de instalación del controlador solicita que se reinicie la PC.
+
+Si un controlador de NIC nuevo no funciona conforme a lo esperado después de la instalación, es posible desinstalar el controlador o revertir al controlador anterior. En Administrador de dispositivos, haga doble clic en el adaptador. En la ventana Propiedades del adaptador, seleccione la ficha Controlador y haga clic en Revertir al controlador anterior. Si no había ningún controlador instalado antes de la actualización, esta opción no estará disponible, como se muestra en la ilustración. En ese caso, si el sistema operativo no puede encontrar un controlador adecuado para la NIC, debe buscar un controlador para el dispositivo e instalarlo manualmente.
+
+6.8.2.7 Configuración de una NIC
+Una vez instalado el controlador de la NIC, configure los parámetros de la dirección IP. Si la NIC está configurada con una dirección IP estática, es posible que deba modificar la dirección IP si su computadora se conecta a otra red. Por lo tanto, puede que sea más práctico habilitar el DHCP en su computadora para que reciba la información de dirección IP del servidor de DHCP.
+
+Debe configurarse la siguiente información en todas las NIC:
+
+Protocolos: deben implementarse los mismos protocolos entre dos PC cualesquiera que se comuniquen en la misma red, como se muestra en la Figura 1.
+Dirección IP: esta dirección puede configurarse y debe ser exclusiva para cada dispositivo. La dirección IP puede configurarse manualmente o ser asignada en forma automática por el DHCP.
+Dirección MAC: cada dispositivo posee una dirección MAC exclusiva. La dirección MAC es asignada por el fabricante y no puede modificarse.
+En Windows 7, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Cambiar configuración del adaptador; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades; configure los parámetros de IP y haga clic en Aceptar > Aceptar.
+
+En Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Administrar conexiones de red; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IPv4 > Propiedades; configure los parámetros de IP y haga clic en Aceptar > Aceptar.
+
+En Windows XP, utilice la siguiente ruta:
+
+Inicio > Panel de control > Conexiones de red; haga clic con el botón secundario en Conexión de área local > Propiedades > TCP/IP > Propiedades; configure los parámetros de IP y haga clic en Aceptar > Aceptar.
+
+Configuración de parámetros de IP alternativos
+
+Establecer una configuración IP alternativa en Windows simplifica el traspaso entre una red que exige el uso de DHCP y una red que utiliza una configuración IP estática. Si una PC no puede comunicarse con el servidor de DHCP en la red, Windows utiliza la configuración IP alternativa asignada a la NIC. La configuración IP alternativa también reemplaza la dirección APIPA asignada cuando no es posible conectarse al servidor de DHCP.
+
+Para crear una configuración IP alternativa, como se muestra en la Figura 2, haga clic en la ficha Configuración alternativa de la ventana Propiedades de la NIC.
+
+6.8.2.8 Configuración avanzada de la NIC
+En la mayoría de los entornos de red, el único parámetro de la NIC que se debe configurar es la información de dirección IP; los valores predeterminados de la configuración avanzada de la NIC se pueden conservar tal como están. No obstante, cuando una PC se conecta a una red que no admite alguna de las configuraciones predeterminadas, o ninguna de estas, debe realizar las modificaciones correspondientes en la configuración avanzada. Estas modificaciones pueden ser necesarias para que la PC pueda conectarse a la red, para habilitar las características requeridas por la red o para obtener una mejor conexión de red.
+
+Si no se configuran correctamente las características avanzadas, es posible que la comunicación falle o que disminuya el rendimiento. Las características avanzadas se encuentran en la ficha Opciones avanzadas de la ventana de configuración de la NIC. La ficha Opciones avanzadas contiene todos los parámetros disponibles del fabricante de la NIC.
+
+NOTA: Las características avanzadas disponibles y la disposición de las características en la ficha dependen del OS y del adaptador y el controlador de NIC específicos que estén instalados.
+
+Dúplex y velocidad
+
+Si las configuraciones de dúplex y velocidad de una NIC no coinciden con las del dispositivo al que están conectadas, puede reducirse la velocidad de transferencia de datos de la PC. La incompatibilidad de dúplex se produce cuando una NIC con un dúplex o una velocidad de enlace específicos está conectada a una NIC configurada con valores diferentes. La opción predeterminada es automática, pero es posible que deba modificar el dúplex, la velocidad o ambos. En la Figura 1, se muestran las configuraciones de velocidad y dúplex.
+
+Wake on LAN
+
+Las configuraciones de WoL se utilizan para reactivar una PC conectada en red que se encuentra en un estado de modo de muy bajo consumo. En un modo de muy bajo consumo, la PC está apagada pero continúa conectada a una fuente de energía. Para admitir WoL, la PC debe poseer una fuente de energía compatible con ATX y una NIC compatible con WoL. Se envía un mensaje de reactivación, denominado “magic packet”, a la NIC de la PC. El magic packet contiene la dirección MAC de la NIC conectada a la PC. Cuando la NIC recibe el magic packet, se reactiva la PC.
+
+La configuración de WoL puede establecerse en el BIOS de la motherboard o en el firmware del controlador de la NIC. En la Figura 2, se muestra la configuración del firmware del controlador.
+
+Calidad de servicio (QoS)
+
+QoS, también denominada 802.1q QoS, consiste en una variedad de técnicas que controlan el flujo del tráfico de la red, mejoran las velocidades de transmisión y optimizan el tráfico de las comunicaciones en tiempo real. Para que el servicio funcione, tanto la PC conectada en red como el dispositivo de red deben tener habilitada la opción QoS. Cuando una PC tiene QoS instalada y habilitada, Windows puede limitar el ancho de banda disponible para admitir tráfico de alta prioridad. Cuando QoS está deshabilitada, se procesa todo el tráfico indistintamente. En la Figura 3, se muestra la instalación del servicio de red denominado “Programador de paquetes QoS”.
+
+
+6.8.3 Configuración de routers inalámbricos y conectados por cable
+6.8.3.1 Conexión a un router
+Una vez que se instalaron los controladores de la NIC, puede conectarse por primera vez el router de red. Conecte un cable de red, también denominado “cable de conexión Ethernet” o “cable directo de Ethernet”, al puerto de red de la PC. Conecte el otro extremo al dispositivo de red o al conector de pared.
+
+Después de conectar el cable de red, observe los LED, o luces de enlace, que se encuentran junto al puerto Ethernet de la NIC para verificar si presentan actividad. En la ilustración, se muestran las luces de enlace de una NIC. Si no hay actividad, puede deberse a una falla en el cable, en un puerto del switch o, incluso, en la NIC. Es posible que deba reemplazar uno o varios de estos dispositivos para resolver el problema.
+
+Una vez que se confirma que la PC está conectada a la red y las luces de enlace de la NIC indican que la conexión funciona, la PC requiere una dirección IP. La mayoría de las redes están configuradas de manera tal que la PC recibe automáticamente una dirección IP de un servidor de DHCP local. Si la PC no cuenta con una dirección IP, introduzca una dirección IP exclusiva en las propiedades de TCP/IP de la NIC.
+
+Para conectarse a un router E2500 por primera vez, siga estos pasos:
+
+Paso 1. En la parte posterior del router Linksys E2500 hay cinco puertos Ethernet. Conecte un módem por cable o DSL al puerto rotulado “Internet”. La lógica de conmutación del dispositivo reenvía todos los paquetes a través de este puerto cuando hay comunicación entre Internet y las demás PC conectadas. Conecte una PC a cualquiera de los puertos restantes para tener acceso a las páginas Web de configuración.
+
+Paso 2. Encienda el módem de banda ancha y enchufe el cable de alimentación al router. Cuando el módem termina de establecer una conexión con el ISP, el router se comunica automáticamente con el módem para recibir la información de red del ISP necesaria para tener acceso a Internet: dirección IP, máscara de subred y direcciones del servidor DNS. Se enciende el LED de Internet, lo que indica que hay comunicación con el módem.
+
+Paso 3. Una vez que el router establece comunicación con el módem, debe configurar el router para que se comunique con los dispositivos en la red. Encienda la PC que está conectada al router. Se enciende el LED de la NIC, lo que indica que hay comunicación con el router.
+
+6.8.3.2 Configuración de la ubicación de la red
+La primera vez que Windows 7 o Windows Vista se conectan a una red, debe seleccionarse un perfil de ubicación de red. Cada perfil de ubicación de red posee diferentes configuraciones predeterminadas. Según el perfil seleccionado, pueden activarse o desactivarse la detección de redes o el uso compartido de impresoras y archivos, y pueden aplicarse diferentes configuraciones de firewall.
+
+Windows 7 y Windows Vista cuentan con tres perfiles de ubicación de red denominados “Red pública”, “Red de trabajo” y “Red doméstica”. Las PC que pertenecen a una red pública, de trabajo o doméstica y comparten recursos en ella deben ser miembros del mismo grupo de trabajo. Las PC de una red doméstica también pueden pertenecer a un grupo en el hogar. Un grupo en el hogar es una característica de Windows 7 que proporciona un método sencillo para compartir archivos e impresoras. Windows Vista no admite la característica de grupo en el hogar.
+
+Existe un cuarto perfil de ubicación de red denominado “Red de dominio”, que suele utilizarse en ámbitos laborales corporativos. Este perfil se encuentra bajo el control del administrador de red, y los usuarios que están conectados a la empresa no pueden seleccionarlo ni modificarlo.
+
+Windows XP no admite la elección de un perfil de ubicación de red, y este no es un paso obligatorio para conectarse a una red.
+
+En la Figura 1, se muestran los tres perfiles de ubicación de red disponibles para los usuarios de Windows 7 y Windows Vista. Cuando se conecte a una red por primera vez, utilice la siguiente información para realizar la elección adecuada.
+
+Red doméstica: seleccione esta ubicación de red para redes domésticas o cuando las personas y dispositivos en la red sean de confianza. La detección de redes está activada, lo que le permite ver los demás dispositivos y PC en la red, y les permite a los demás usuarios ver su PC.
+Red de trabajo: seleccione esta ubicación de red para una oficina pequeña o la red de otro lugar de trabajo. La detección de redes está activada. No puede crearse un grupo en el hogar ni unirse a uno.
+Red pública: seleccione esta ubicación de red para aeropuertos, cafeterías y demás lugares públicos. La detección de redes está desactivada. Esta ubicación de red proporciona la mayor protección. También puede seleccionar esta ubicación de red si se conecta directamente a Internet sin un router o si posee una conexión de banda ancha móvil. No está disponible la opción de grupo en el hogar.
+NOTA: si solo hay una PC en la red y no es necesario compartir archivos ni impresoras, la opción más segura es Red pública.
+
+Si no se muestra la ventana Establecer ubicación de red al conectarse a una red por primera vez, es posible que deba liberar y renovar la dirección IP de su PC. Abra el símbolo del sistema en la PC, escriba ipconfig /release y, a continuación, escriba ipconfig /renew para recibir una dirección IP del router.
+
+Puede modificar la configuración predeterminada de todos los perfiles de ubicación de red, como se muestra en la Figura 2. Los cambios realizados en el perfil predeterminado se aplican a todas las redes que utilicen el mismo perfil de ubicación de red.
+
+Para modificar la configuración de perfiles de ubicación de red en Windows 7, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos; haga clic en el perfil de ubicación de red actual, > seleccione una ubicación de red, > Ver o cambiar la configuración en el Centro de redes y recursos compartidos > Elegir grupo en el hogar y opciones de uso compartido > Cambiar configuración de uso compartido avanzado.
+
+Para modificar la configuración de perfiles de ubicación de red en Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Personalizar; seleccione un Tipo de ubicación; > Siguiente > Ver o cambiar la configuración de redes y de recursos compartidos en el Centro de redes y recursos compartidos.
+
+6.8.3.3 Conexión al router
+Una vez que el router establece comunicación con el módem, configure el router para que se comunique con los dispositivos en la red. Abra un explorador Web. En el campo Dirección, escriba 192.168.1.1. Esa es la dirección IP privada predeterminada de la interfaz de configuración y administración del router Linksys E2500.
+
+La primera vez que se conecte al router Linksys E2500, se le solicitará que instale el software Cisco Connect o que se conecte manualmente al router mediante la utilidad basada en el explorador. Cuando se conecte manualmente a un router E2500, aparecerá una ventana de seguridad, como se muestra en la ilustración, que le solicitará autenticación para acceder a las pantallas de configuración del router. Debe dejar en blanco el campo de nombre de usuario. Introduzca la contraseña predeterminada “admin”.
+
+6.8.3.4 Configuración básica de red
+Tras el inicio de sesión, se abre la pantalla de configuración, como se muestra en la ilustración. La pantalla de configuración cuenta con fichas que lo ayudarán a configurar el router. Debe hacer clic en Save Settings (Guardar configuraciones) en la parte inferior de cada pantalla después de realizar cualquier modificación.
+
+Todos los routers que están diseñados para uso doméstico o en pequeñas empresas están preconfigurados con parámetros básicos. Estas configuraciones pueden encontrarse en diferentes pestañas, según la marca y el modelo del router. Es aconsejable modificar las siguientes configuraciones predeterminadas.
+
+Router Name (Nombre del router): proporcione un nombre que pueda reconocerse fácilmente. Este es el nombre que se mostrará al ver los dispositivos de red desde un sistema operativo.
+Network Device Access Permissions (Permisos de acceso de dispositivos de red): muchos dispositivos de red desarrollados por un fabricante determinado poseen el mismo nombre de usuario y la misma contraseña de manera predeterminada para acceder a la pantalla de configuración del dispositivo. Si no se modifican, los usuarios no autorizados pueden conectarse fácilmente al dispositivo y modificar las configuraciones. Cambie el nombre de usuario y la contraseña predeterminados la primera vez que se conecte al dispositivo de red. Algunos dispositivos solo permiten restablecer la contraseña.
+Basic QoS (QoS básica): el router E2500 admite QoS para aplicaciones, juegos en línea, VoIP y streaming de video.
+Si bien es conveniente modificar algunas configuraciones predeterminadas, es preferible no modificar otras. La mayoría de las redes domésticas o de pequeñas empresas comparten una única conexión a Internet proporcionada por el ISP. Los routers de este tipo de redes reciben direcciones públicas del ISP, que le permiten al router enviar paquetes a Internet y recibirlos de esta. El router proporciona direcciones privadas a los hosts de la red local. Como las direcciones privadas no pueden utilizarse en Internet, se utiliza un proceso para convertir las direcciones privadas en direcciones públicas exclusivas. Esto permite a los hosts locales comunicarse a través de Internet.
+
+El proceso que se utiliza para convertir las direcciones privadas en direcciones enrutables de Internet se denomina traducción de direcciones de red (NAT, Network Address Translation). Con NAT, una dirección IP de origen privado (local) se traduce a una dirección pública (global). En el caso de los paquetes entrantes, el proceso es inverso. Por medio de NAT, el router puede traducir muchas direcciones IP internas a direcciones públicas.
+
+Solo es necesario traducir los paquetes destinados a otras redes. Estos paquetes deben atravesar el gateway, donde el router reemplaza las direcciones IP privadas de los hosts de origen por las direcciones IP públicas del router.
+
+Si bien cada host de la red interna posee una dirección IP privada exclusiva, los hosts comparten direcciones enrutables de Internet que el ISP le asignó al router.
+
+En las pantallas de configuración del router E2500, haga clic en la ficha Help (Ayuda) para ver más información sobre la ficha. Para obtener más información que la que se presenta en la pantalla de ayuda, consulte los documentos.
+
+6.8.3.7 Configuración inalámbrica básica
+Después de establecer la conexión a un router, es aconsejable configurar algunos parámetros básicos para aumentar la velocidad de la red inalámbrica y contribuir a su seguridad. Todos los parámetros inalámbricos que se presentan a continuación se encuentran dentro de la ficha Wireless (Tecnología inalámbrica), que se muestra en la ilustración:
+
+Modo de red
+Identificador de conjunto de servicios (SSID)
+Canal
+Modos de seguridad inalámbrica
+Network Mode (Modo de red)
+
+El protocolo 802.11 puede proporcionar un rendimiento superior según el entorno de red inalámbrica. Si todos los dispositivos inalámbricos se conectan con el mismo estándar 802.11, pueden obtenerse las máximas velocidades para ese estándar. Si el punto de acceso está configurado para aceptar solo un estándar 802.11, no pueden conectarse dispositivos que no utilicen ese estándar al punto de acceso.
+
+Un entorno de red inalámbrica de modo mixto puede incluir 802.11a, 802.11b, 802.11g y 802.11n. Este entorno proporciona un acceso sencillo a dispositivos antiguos que requieran conexión inalámbrica.
+
+SSID
+
+SSID es el nombre de la red inalámbrica. La transmisión del SSID permite que otros dispositivos detecten automáticamente el nombre de la red inalámbrica. Si la transmisión del SSID está deshabilitada, debe introducir manualmente el SSID en los dispositivos inalámbricos.
+
+Deshabilitar la transmisión del SSID puede hacer que a los clientes legítimos les resulte más difícil encontrar la red inalámbrica, pero el solo hecho de deshabilitar la transmisión del SSID no es suficiente para impedir que los clientes no autorizados se conecten a la red inalámbrica. En lugar de deshabilitar la transmisión del SSID, utilice una encriptación más segura, como WPA o WPA2.
+
+Channel (Canal)
+
+Los dispositivos inalámbricos que transmiten en el mismo rango de frecuencia crean interferencias. Los dispositivos electrónicos domésticos, como teléfonos inalámbricos, otras redes inalámbricas y monitores de bebé, pueden utilizar este mismo rango de frecuencia. Estos dispositivos pueden reducir el rendimiento de Wi-Fi y, potencialmente, interrumpir las conexiones de red.
+
+Los estándares 802.11b y 802.11g se transmiten en un rango de frecuencia de radio restringido de 2,4 GHz. El rango de señal Wi-Fi de 2,4 GHz se divide en varias bandas más pequeñas, también denominadas “canales”. Configurar el número de este canal de Wi-Fi es una forma de evitar la interferencia inalámbrica.
+
+El canal 1 utiliza la banda de frecuencia más baja, y cada uno de los canales subsiguientes aumenta ligeramente la frecuencia. Cuanto más alejados están dos números de canal, menor será el grado de superposición y la posibilidad de presentar interferencias. Los canales 1 y 11 no se superponen con el canal predeterminado 6. Es aconsejable utilizar uno de estos tres canales para obtener resultados óptimos. Por ejemplo, si experimenta interferencias con la WLAN de un vecino, cambie a un canal lejano.
+
+Wireless Security (Seguridad de la transmisión inalámbrica)
+
+La mayoría de los puntos de acceso inalámbricos admiten varios modos de seguridad diferentes. Los más comunes son los siguientes:
+
+WEP: la privacidad equivalente por cable (WEP, Wired Equivalent Privacy) encripta los datos de broadcast entre el punto de acceso inalámbrico y el cliente mediante una clave de encriptación de 64 o 128 bits.
+TKIP: el protocolo de integridad de clave temporal (TKIP, Temporal Key Integrity Protocol) es un parche para WEP que negocia automáticamente una clave nueva cada unos pocos minutos. El TKIP ayuda a impedir que los atacantes obtengan datos suficientes para descifrar la clave de encriptación.
+AES: el estándar de encriptación avanzada (AES, Advanced Encryption Standard) es un sistema de encriptación más seguro que el TKIP. El AES también requiere una mayor capacidad de cómputo para ejecutar la encriptación más segura.
+WPA: el acceso protegido Wi-Fi (WPA, Wi-Fi Protected Access) es una versión mejorada de WEP creada como una solución temporal hasta la ratificación de 802.11i. Ahora que 802.11i está ratificado, se presentó WPA2, que abarca todo el estándar 802.11i. WPA utiliza una encriptación mucho más segura que la encriptación WEP.
+WPA2: el acceso protegido Wi-Fi 2 (WPA2, Wi-Fi Protected Access 2) es una versión mejorada de WPA que admite una encriptación sólida que proporciona seguridad de nivel gubernamental. WPA2 puede habilitarse con autenticación de contraseña (personal) o autenticación de servidor (empresa).
+
+6.8.3.12 Prueba de conectividad con la GUI de Windows
+Una vez que todos los dispositivos estén conectados y todas las luces de enlace estén encendidas, pruebe la conectividad de la red. Esta prueba permite determinar si está conectado a un punto de acceso inalámbrico, a un gateway doméstico o a Internet. La forma más sencilla de probar una conexión a Internet consiste en abrir un explorador Web y ver si hay Internet disponible. Para resolver problemas de conexión inalámbrica, puede utilizar la GUI o la CLI de Windows.
+
+Para verificar una conexión inalámbrica en Windows 7, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Cambiar configuración del adaptador. Luego, haga doble clic en Conexión de red inalámbrica para que se muestre la pantalla de estado.
+
+Para verificar una conexión inalámbrica en Windows Vista, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos > Administrar conexiones de red. Luego, haga doble clic en Conexión de red inalámbrica para que se muestre la pantalla de estado.
+
+Para verificar una conexión inalámbrica en Windows XP, utilice la siguiente ruta:
+
+Inicio > Panel de control> Conexiones de red. Luego, haga doble clic en Conexión de red inalámbrica para que se muestre la pantalla de estado.
+
+En la ventana Estado de conexiones de red inalámbricas, que se muestra en la ilustración, se muestra si la PC está conectada a Internet, así como la duración de la conexión. También se muestra la cantidad de bytes enviados y recibidos.
+
+Tanto en Windows 7 como en Windows Vista, haga clic en el botón Detalles. La información de Estado de conexiones incluye una dirección estática o dinámica. También se detallan la máscara de subred, el gateway predeterminado, la dirección MAC y demás información sobre la dirección IP. Si la conexión no funciona correctamente, haga clic en Diagnosticar para restablecer la información de conexión e intentar establecer una nueva conexión.
+
+En Windows XP, para que se muestre el Tipo de dirección, haga clic en la ficha Soporte. La información de Estado de conexiones incluye una dirección estática, que se asigna manualmente, o una dirección dinámica, que es asignada por un servidor de DHCP. También se incluyen la máscara de subred y el gateway predeterminado. Para acceder a la dirección MAC y demás información sobre la dirección IP, haga clic en Detalles. Si la conexión no funciona correctamente, haga clic en Reparar para restablecer la información de conexión e intentar establecer una nueva conexión.
+
+Para ver más información sobre redes inalámbricas locales antes de realizar una conexión, es posible que deba utilizar un localizador de redes inalámbricas. Los localizadores de redes inalámbricas son utilidades de software que le permiten al usuario ver transmisiones de SSID, encriptaciones, canales y ubicaciones de redes inalámbricas de los alrededores.
+
+6.8.3.13 Prueba de conectividad con la CLI de Windows
+Pueden utilizarse varios comandos de CLI para probar la conectividad de la red. Como técnico, es esencial que se familiarice con un conjunto básico de estos comandos.
+
+Opciones del comando ipconfig
+
+Mediante el comando ipconfig, se muestra información de configuración básica de todos los adaptadores de red. Para realizar tareas específicas, puede agregar opciones al comando ipconfig, como se muestra en la Figura 1.
+
+Opciones del comando ping
+
+El comando ping prueba la conectividad básica entre dispositivos. Puede probar su propia conexión haciendo ping a su PC. Para probar su PC, haga ping a su NIC. En Windows 7 y Windows Vista, seleccione Inicio y escriba cmd. En Windows XP, seleccione Inicio > Ejecutar > cmd. En el símbolo del sistema, introduzca ping localhost.
+
+Intente hacer ping a otras PC de la red, incluido el gateway predeterminado y las PC remotas. Puede hallar la dirección del gateway predeterminado mediante el comando ipconfig.
+
+Para verificar el correcto funcionamiento de la conexión WAN, haga ping a una dirección IP pública ajena a su red. También puede probar la conexión a Internet y el DNS haciendo ping a un sitio Web conocido. En el símbolo del sistema, introduzca ping nombre_de_destino.
+
+La respuesta del comando ping muestra la resolución de dirección IP del dominio. La respuesta muestra las respuestas del ping o indica que el tiempo de espera se agotó para la solicitud porque existe un problema.
+
+Para realizar otras tareas específicas, puede agregar opciones al comando ping, como se muestra en la Figura 2.
+
+Comandos net
+
+Utilice el comando net para administrar PC, servidores y recursos de red, como unidades de disco e impresoras. Los comandos net utilizan el protocolo NetBIOS de Windows. Estos comandos inician, detienen y configuran servicios de networking, como se muestra en la Figura 3.
+
+Comando tracert
+
+El comando tracert rastrea la ruta que siguen los paquetes desde su PC hasta el host de destino. En el símbolo del sistema, introduzca tracert nombredehost.
+
+El primer elemento de los resultados corresponde a su gateway predeterminado. Cada uno de los elementos posteriores corresponde al router a través del cual se desplazan los paquetes para llegar al destino. El comando tracert muestra dónde se detienen los paquetes, lo que indica dónde se produce el problema. Si en los listados se muestran problemas después del gateway predeterminado, es posible que los problemas radiquen en el ISP, en Internet o en el servidor de destino.
+
+Comando nslookup
+
+El comando nslookup prueba los servidores DNS y resuelve los problemas en ellos. Le solicita al servidor DNS que detecte direcciones IP o nombres de host. En el símbolo del sistema, introduzca nslookup nombredehost. Nslookup responde con la dirección IP del nombre de host introducido. El comando nslookup inverso, nslookup dirección_IP responde con el nombre de host correspondiente a la dirección IP introducida.
+
+6.8.4 Configuraciones de OS
+6.8.4.1 Dominio y grupo de trabajo
+Los dominios y los grupos de trabajo son métodos para organizar y administrar las PC en una red. Todas las PC en una red deben formar parte de un dominio o de un grupo de trabajo. Cuando se instala Windows en una PC por primera vez, se la asigna automáticamente a un grupo de trabajo, como se muestra en la ilustración.
+
+Dominio
+
+Un dominio es un grupo de PC y dispositivos electrónicos con un conjunto común de reglas y procedimientos administrados como una unidad. Los dominios no hacen referencia a una única ubicación ni a un tipo específico de configuración de red. Las PC en un dominio son una agrupación lógica de PC conectadas que pueden encontrarse en diferentes partes del mundo. Un servidor especializado denominado “controlador de dominio” administra todos los aspectos relacionados con la seguridad de los usuarios y de los recursos de red mediante la centralización de la seguridad y la administración.
+
+Para la protección de datos, un administrador lleva a cabo una copia de seguridad de rutina de todos los archivos en los servidores. En caso de que las PC se bloqueen o se produzca una pérdida de datos, el administrador puede recuperar fácilmente los datos a partir de la copia de seguridad reciente.
+
+Grupo de trabajo
+
+Un grupo de trabajo es un conjunto de estaciones de trabajo y servidores en una LAN diseñados para comunicarse e intercambiar datos entre sí. Cada estación de trabajo controla las cuentas, la información de seguridad y el acceso a datos y recursos de sus usuarios.
+
+6.8.4.2 Conexión a un grupo de trabajo o dominio
+Para que las PC puedan compartir recursos, primero deben contar con el mismo nombre de dominio o de grupo de trabajo. En los sistemas operativos más antiguos, hay más restricciones para la denominación de los grupos de trabajo. Si un grupo de trabajo está compuesto por sistemas operativos más modernos y más antiguos, debe utilizarse el nombre de grupo de trabajo de la PC que posea el sistema operativo más antiguo.
+
+NOTA: para cambiar una PC de un dominio a un grupo de trabajo, debe contar con el nombre de usuario y la contraseña de una cuenta del grupo del administrador local.
+
+Para cambiar el nombre del grupo de trabajo en Windows 7 y Windows Vista, como se muestra en la Figura 1, utilice la siguiente ruta:
+
+Inicio; haga clic con el botón secundario en Equipo > Propiedades > Cambiar configuración > Cambiar.
+
+Para cambiar el nombre del grupo de trabajo en Windows XP, utilice la siguiente ruta:
+
+Inicio; haga clic con el botón secundario en Mi PC > Propiedades; seleccione la ficha Nombre del equipo y haga clic en > Cambiar.
+
+Windows también posee un asistente, que se muestra en la Figura 2, que lo guía a través del proceso de incorporación a un dominio o grupo de trabajo. Después de cambiar el nombre del dominio o grupo de trabajo, debe reiniciar la PC para que surtan efecto los cambios.
+
+6.8.4.3 Grupo Hogar en Windows 7
+Todas las PC con Windows 7 que pertenecen al mismo grupo de trabajo también pueden pertenecer a un grupo en el hogar. Solo puede haber un grupo en el hogar por cada grupo de trabajo de la red. Las PC solo pueden ser miembros de un grupo en el hogar a la vez. La opción de grupo en el hogar no está disponible en Windows Vista ni en Windows XP.
+
+La creación del grupo en el hogar está a cargo de un solo usuario del grupo de trabajo. Los demás usuarios pueden unirse al grupo en el hogar, siempre y cuando conozcan la contraseña de dicho grupo. La disponibilidad del grupo en el hogar depende del perfil de ubicación de red:
+
+Red doméstica: con permiso para crear un grupo en el hogar o unirse a uno.
+Red de trabajo: sin permiso para crear un grupo en el hogar ni unirse a uno, pero pueden verse recursos y se pueden compartir con otras PC.
+Red pública: el grupo en el hogar no está disponible.
+NOTA: las PC con Windows 7 Starter o Windows 7 Home Basic pueden unirse a un grupo en el hogar, pero no pueden crear uno.
+
+Para cambiar una PC al perfil de ubicación de red “Red doméstica”, siga estos pasos:
+
+Paso 1. Haga clic en Inicio > Panel de control > Centro de redes y recursos compartidos.
+
+Paso 2. Haga clic en el perfil de ubicación de red incluido en la sección Ver las redes activas de la ventana, que se muestra en la Figura 1.
+
+Paso 3. Haga clic en Red doméstica.
+
+Paso 4. Seleccione los elementos que desee compartir (p. ej., imágenes, música, videos, documentos e impresoras) y haga clic en Siguiente.
+
+Paso 5. Cree un grupo en el hogar o únase a uno.
+
+Para crear un grupo en el hogar, siga estos pasos:
+
+Paso 1. Haga clic en Inicio > Panel de control > Grupo Hogar.
+
+Paso 2. Haga clic en Crear un grupo en el hogar, como se muestra en la Figura 2.
+
+Paso 3. Seleccione los archivos que desee compartir y haga clic en Siguiente.
+
+Paso 4. Registre la contraseña del grupo en el hogar.
+
+Paso 5. Haga clic en Finalizar.
+
+Cuando una PC se une a un grupo en el hogar, todas las cuentas de usuario de la PC, excepto la cuenta Invitado, se convierten en miembros del grupo en el hogar. Formar parte de un grupo en el hogar facilita el uso compartido de imágenes, música, videos, documentos, bibliotecas e impresoras con otras personas del mismo grupo en el hogar. Los usuarios controlan el acceso a sus propios recursos. Además, los usuarios también pueden crear un grupo en el hogar o unirse a uno mediante una máquina virtual en Windows Virtual PC.
+
+Para unir una PC a un grupo en el hogar, siga estos pasos:
+
+Paso 1. Haga clic en Inicio > Panel de control > Grupo Hogar.
+
+Paso 2. Haga clic en Unirse ahora, como se muestra en la Figura 3.
+
+Paso 3. Seleccione los archivos que desee compartir y haga clic en Siguiente.
+
+Paso 4. Escriba la contraseña del grupo en el hogar y haga clic en Siguiente.
+
+Paso 5. Haga clic en Finalizar.
+
+Para cambiar los archivos compartidos en una PC, seleccione Inicio > Panel de control > Grupo Hogar. Después de realizar los cambios necesarios, haga clic en Guardar cambios.
+
+NOTA: si una PC pertenece a un dominio, puede unirse a un grupo en el hogar y tener acceso a los archivos y recursos de otras PC del grupo en el hogar, pero no tiene permiso para crear un nuevo grupo en el hogar ni para compartir sus propios archivos y recursos con un grupo tal.
+
+6.8.4.4 Uso compartido de recursos en Windows Vista
+Windows Vista controla qué recursos se comparten, y de qué forma, mediante la activación o desactivación de determinadas características de uso compartido. La opción Compartir y detectar, ubicada en el Centro de redes y recursos compartidos, administra la configuración de una red doméstica. Permite controlar los siguientes elementos:
+
+Detección de redes
+Uso compartido de archivos
+Uso compartido de la carpeta Acceso público
+Uso compartido de impresoras
+Uso compartido con protección por contraseña
+Uso compartido de multimedia
+Para acceder a la opción Compartir y detectar, utilice la siguiente ruta:
+
+Inicio > Panel de control > Centro de redes y recursos compartidos
+
+Para habilitar el uso de recursos compartidos entre PC conectadas al mismo grupo de trabajo, deben estar activadas las opciones Detección de redes y Uso compartido de archivos, como se muestra en la ilustración.
+
+6.8.4.5 Uso compartido de recursos en Windows XP
+El Asistente para configuración de red de Windows XP, que se muestra en la ilustración, permite definir los parámetros de la PC para configurar una red doméstica y el uso compartido de recursos. El asistente permite configurar los siguientes elementos:
+
+Una conexión a Internet para la PC a través de una conexión de banda ancha o dial-up directa, o a través de otra PC en la red doméstica.
+Conexión compartida a Internet en una PC basada en Windows XP para compartir una conexión a Internet con otras PC en la red doméstica.
+Nombre del equipo, descripción del equipo y nombre del grupo de trabajo.
+Uso compartido de archivos e impresoras.
+Para acceder al Asistente para configuración de red, utilice la siguiente ruta:
+
+Inicio > Panel de control> Asistente para configuración de red
+
+El Asistente para configuración de red es portátil, es decir que puede crear un disco de Asistente para configuración de red, a fin de configurar automáticamente otras PC con Windows XP con los mismos parámetros.
+
+6.8.4.6 Recursos compartidos de red y asignación de unidades
+El uso compartido de archivos en una red y la asignación de unidades de red es una forma segura y conveniente de proporcionar acceso sencillo a los recursos de red. Esto es así especialmente cuando resulta necesario que diferentes versiones de Windows tengan acceso a los recursos de red. La asignación de una unidad local es un método útil cuando diferentes sistemas operativos de una red necesitan acceder a un solo archivo, a determinadas carpetas o a toda una unidad. La asignación de una unidad, que se lleva a cabo mediante la asignación de una letra (de la A a la Z) al recurso en una unidad remota, permite utilizar la unidad remota como si fuera una unidad local.
+
+Uso compartido de archivos en una red
+
+En primer lugar, determine qué recursos se compartirán en la red y el tipo de permisos que tendrán los usuarios sobre los recursos. Los permisos definen el tipo de acceso que poseen los usuarios a un archivo o a una carpeta.
+
+Lectura: el usuario puede ver el nombre del archivo y de las subcarpetas, navegar por las subcarpetas, ver los datos en los archivos y ejecutar archivos de programa.
+Modificar: además de los permisos de lectura, el usuario puede agregar archivos y subcarpetas, modificar los datos en los archivos y eliminar subcarpetas y archivos.
+Control total: además de los permisos de lectura y modificación, el usuario puede modificar los permisos de archivos y carpetas de una partición NTFS, y apropiarse de archivos y carpetas.
+Luego, copie o mueva los recursos a una carpeta compartida.
+
+Para compartir recursos en Windows 7 y Windows Vista, utilice la siguiente ruta:
+
+Haga clic con el botón secundario en la carpeta > Propiedades > Uso compartido avanzado y, a continuación, seleccione Compartir esta carpeta > Permisos. Identifique quiénes tienen acceso a la carpeta y qué permisos poseen. En la Figura 1, se muestra la ventana de permisos de una carpeta compartida.
+
+Para compartir recursos en Windows XP, utilice la siguiente ruta:
+
+Haga clic con el botón secundario en la carpeta > y, a continuación, seleccione Compartir y seguridad > Compartir esta carpeta. Identifique quiénes tienen acceso a la carpeta y qué permisos poseen.
+
+Asignación de unidades de red
+
+Para asignar una unidad de red a una carpeta compartida, utilice la siguiente ruta:
+
+Inicio; haga clic con el botón secundario en Equipo > Conectar a unidad de red. Ubique la carpeta compartida en la red y asígnele una letra de unidad, como se muestra en la Figura 2.
+
+Windows 7 posee un límite máximo de 20 conexiones simultáneas de uso compartido de archivos. Windows Vista Business y Windows XP Professional tienen un límite máximo de 10 conexiones simultáneas de uso compartido de archivos.
+
+6.8.4.10 VPN
+Una red privada virtual (VPN, Virtual Private Network) es una red privada que conecta sitios o usuarios remotos a través de una red pública, como Internet. El tipo de VPN más común se utiliza para acceder a una red privada corporativa. La VPN utiliza conexiones seguras dedicadas, enrutadas a través de Internet, desde la red privada corporativa hasta el usuario remoto. Al conectarse a la red privada corporativa, los usuarios se convierten en parte de esa red y tienen acceso a todos los servicios y recursos como si estuvieran físicamente conectados a la LAN corporativa.
+
+Los usuarios de acceso remoto deben instalar el cliente VPN en sus PC para establecer una conexión segura con la red privada corporativa. El software de cliente VPN encripta los datos antes de enviarlos al gateway VPN de la red privada corporativa a través de Internet. Los gateways VPN establecen, administran y controlan las conexiones VPN, también denominadas “túneles VPN”. En la ilustración, se muestra un software básico de conexión VPN.
+
+Para establecer y configurar Windows 7 y Windows Vista para utilizar una conexión VPN, siga estos pasos:
+
+Paso 1. Seleccione Inicio > Centro de redes y recursos compartidos.
+Paso 2. Seleccione Configurar una nueva conexión o red.
+Paso 3. Una vez que se abra la ventana del Asistente para conexión nueva, seleccione Conectarse a un área de trabajo y haga clic en Siguiente.
+Paso 4. Seleccione Usar mi conexión a Internet (VPN) y escriba la dirección de Internet y el nombre de destino.
+Paso 5. Seleccione No conectarse ahora; configurar para conectarse más tarde y haga clic en Siguiente.
+Paso 6. Escriba el nombre de usuario y la contraseña y haga clic en Crear.
+Paso 7. En la ventana de inicio de sesión, introduzca el nombre de usuario y la contraseña, y haga clic en Conectar.
+Para establecer y configurar Windows XP para utilizar una conexión VPN, siga estos pasos:
+
+Paso 1. Seleccione Inicio > Panel de control > Conexiones de red.
+Paso 2. Seleccione Crear una nueva conexión.
+Paso 3. Una vez que se abra la ventana del Asistente para conexión nueva, haga clic en Siguiente.
+Paso 4. Seleccione Conectarse a la red de mi lugar de trabajo y haga clic en Siguiente.
+Paso 5. Seleccione Conexión de red privada virtual y haga clic en Siguiente.
+Paso 6. Escriba el nombre de la conexión y haga clic en Siguiente.
+Paso 7. Escriba el nombre o la dirección IP del servidor VPN y haga clic en Siguiente y, a continuación, en Finalizar.
+Paso 8. En la ventana de inicio de sesión, introduzca el nombre de usuario y la contraseña, y haga clic en Conectar.
+
+6.9 Elección de un tipo de conexión ISP
+6.9.1 Tecnologías de conexión
+6.9.1.1 Breve historia de las tecnologías de conexión
+En la década de los noventa, Internet solía utilizarse para transferir datos. Las velocidades de transmisión eran lentas en comparación con las conexiones de alta velocidad disponibles actualmente. El ancho de banda adicional permite realizar transmisiones de voz y video, además de datos. En la actualidad, existen muchas formas de conectarse a Internet. Las compañías telefónicas, de cable, de servicios satelitales y de telecomunicaciones privadas ofrecen conexiones a Internet de banda ancha para uso comercial y doméstico.
+
+Servicio de telefonía analógica
+
+El servicio de telefonía analógica, también denominado “servicio telefónico analógico convencional” (POTS, plain old telephone service), transmite a través de líneas telefónicas de voz estándar. Este tipo de servicio utiliza un módem analógico para realizar una llamada telefónica a otro módem ubicado en un sitio remoto, como un proveedor de servicios de Internet. El módem utiliza la línea telefónica para transmitir y recibir datos. Este método de conexión recibe el nombre de “dial-up”.
+
+Red digital de servicios integrados
+
+La red digital de servicios integrados (ISDN, Integrated Services Digital Network) utiliza varios canales y puede ser portadora de diferentes tipos de servicios, por lo que se la considera un tipo de banda ancha. ISDN es un estándar para la transferencia de voz, video y datos a través de cables telefónicos normales. La tecnología ISDN utiliza los cables telefónicos como un servicio telefónico analógico.
+
+Banda ancha
+
+La banda ancha es una tecnología que se utiliza para transmitir y recibir varias señales mediante diferentes frecuencias a través de un cable. El cable que se utiliza para recibir servicios de televisión por cable en su hogar, por ejemplo, puede realizar transmisiones de redes de computadoras al mismo tiempo. Como los dos tipos de transmisiones utilizan frecuencias diferentes, no interfieren entre sí.
+
+La banda ancha utiliza un amplio rango de frecuencias que, a su vez, pueden dividirse en canales. En networking, el término “banda ancha” describe los métodos de comunicación que transmiten dos o más señales a la vez. El envío simultáneo de dos o más señales aumenta la velocidad de transmisión. Algunas conexiones de red de banda ancha comunes incluyen conexión por cable, DSL, ISDN y satelital. En la ilustración, se muestran los equipos que se utilizan para la conexión o para la transmisión de señales de banda ancha.
+
+6.9.1.2 DSL y ADSL
+Línea de suscriptor digital
+
+La línea de suscriptor digital (DSL, Digital Suscriber Line) es un servicio permanente; es decir que no hay necesidad de marcar cada vez que se desea conectarse a Internet. El sistema DSL utilizar las líneas telefónicas de cobre actuales para proporcionar una comunicación digital de datos de alta velocidad entre usuarios finales y compañías telefónicas. A diferencia de ISDN, donde las comunicaciones digitales de datos reemplazan las comunicaciones de voz analógicas, DSL comparte el cable telefónico con señales analógicas.
+
+Mediante DSL, las señales de voz y de datos se transmiten en diferentes frecuencias a través de los cables telefónicos de cobre. Un filtro evita que las señales DSL interfieran con las señales telefónicas; Se conecta un filtro DSL entre cada teléfono y la toma telefónica.
+
+El módem DSL no requiere filtro, dado que no se ve afectado por las frecuencias del teléfono. Los módems DSL pueden conectarse directamente a la PC o a un dispositivo de networking, para compartir la conexión a Internet con varias PC.
+
+Línea de suscriptor digital asimétrica
+
+La línea de suscriptor digital asimétrica (ADSL, Asymmetric Digital Suscriber Line) posee diferentes capacidades de ancho de banda en cada dirección. La descarga es la recepción de datos del servidor por parte del usuario final. La subida es el envío de datos del usuario final al servidor. ADSL posee una velocidad de descarga alta, que resulta útil para aquellos usuarios que descargan grandes cantidades de datos. La velocidad de subida de ADSL es menor que la velocidad de descarga. ADSL no tiene un buen rendimiento para hosting de servidores Web o servidores FTP, ya que ambas aplicaciones implican actividades de Internet de subida intensiva.
+
+6.9.1.3 Servicio de Internet inalámbrica con línea de vista
+Internet inalámbrica con línea de vista es un servicio permanente que utiliza señales de radio para permitir el acceso a Internet. Una torre envía señales de radio a un receptor que el cliente conecta a una PC o dispositivo de red. Es necesario que haya una ruta despejada entre la torre de transmisión y el cliente. La torre puede conectarse a otras torres o directamente a una conexión backbone de Internet. La distancia que puede recorrer la señal de radio sin perder la potencia necesaria para proporcionar una señal nítida depende de la frecuencia de la señal. Una frecuencia baja, de 900 MHz, puede recorrer hasta 40 millas (65 km), mientras que una frecuencia más alta, de 5,7 GHz, solo puede recorrer 2 millas (3 km). Las condiciones climáticas extremas, los árboles y los edificios altos pueden afectar la potencia y el rendimiento de la señal.
+
+6.9.1.4 WiMAX
+La interoperabilidad mundial para el acceso por microondas (WiMAX, Worldwide Interoperability for Microwave Access) es una tecnología de banda ancha inalámbrica 4G basada en IP que ofrece acceso a Internet móvil de alta velocidad para dispositivos móviles. WiMAX es un estándar denominado IEEE 802.16e. Admite una red de dimensión MAN, posee velocidades de descarga de hasta 70 Mb/s y tiene un alcance de hasta 30 mi (50 km). La seguridad y la QoS de WiMAX equivalen a las de las redes de telefonía móvil.
+
+WiMAX utiliza una transmisión de baja longitud de onda, que suele oscilar entre 2 GHz y 11 GHz. Las obstrucciones físicas no interrumpen con tanta facilidad estas frecuencias, ya que pueden curvarse mejor que las frecuencias más altas alrededor de los obstáculos. Admite la tecnología de múltiple entrada múltiple salida (MIMO, Multiple Input Multiple Output), lo que significa que pueden agregarse antenas adicionales para aumentar el rendimiento potencial.
+
+Existen dos métodos de transmisión de señal WiMAX:
+
+WiMAX fija: un servicio de punto a punto o de punto a multipunto con velocidades de hasta 72 Mb/s y un rango de 30 mi (50 km).
+WiMAX móvil: un servicio móvil, como Wi-Fi, pero con mayores velocidades y un rango de transmisión más extenso
+
+6.9.1.5 Otras tecnologías de banda ancha
+La tecnología de banda ancha proporciona varias opciones diferentes para conectar personas y dispositivos con el propósito de comunicarse y compartir información. Cada una presenta diferentes características o está diseñada para abordar necesidades específicas. Es importante comprender bien las diversas tecnologías de banda ancha y entender cuál se adapta mejor a un cliente.
+
+Datos móviles
+
+La tecnología de datos móviles permite la transferencia de voz, video y datos. Mediante la instalación de un adaptador WAN de datos móviles, el usuario puede acceder a Internet a través de la red de telefonía móvil. Existen distintas características de WAN de datos móviles:
+
+1G: solo voz analógica.
+2G: voz digital, llamadas en conferencia e identificador de llamadas; velocidades de datos inferiores a 9.6 Kb/s.
+2.5G: velocidades de datos entre 30 Kb/s y 90 Kb/s: admite exploración Web, clips de audio y video breves, juegos y descargas de aplicaciones y tonos de llamada.
+3G: velocidades de datos entre 144 Kb/s y 2 Mb/s; admite video de movimiento completo, streaming de música, juegos 3D y exploración Web más veloz.
+3.5G: velocidades de datos entre 384 Kb/s y 14.4 Mb/s; admite streaming video de alta calidad, conferencias de video de alta calidad y VoIP.
+4G: velocidades de datos entre 5,8 Mb/s y 672 Mb/s en sistema móvil y de hasta 1 Gb/s en sistema estacionario; admite voz basada en IP, servicios de juegos, transmisión por secuencias de multimedia de alta calidad e IPv6.
+Las redes de telefonía móvil utilizan una o varias de las siguientes tecnologías:
+
+GSM: el sistema global para comunicaciones móviles (GSM, Global System for Mobile communications) es el estándar utilizado por la red de telefonía móvil de todo el mundo.
+GPRS: el servicio general de radio por paquetes (GPRS, General Packet Radio Service) es el servicio de datos para usuarios de GSM.
+Cuatribanda: permite que un teléfono celular opere en las cuatro frecuencias GSM (850 MHz, 900 MHz, 1800 MHz y 1900 MHz).
+SMS: el servicio de mensajes cortos (SMS, Short Message Service) es un servicio de datos utilizado para enviar y recibir mensajes de texto.
+MMS: el servicio de mensajería multimedia (MMS, Multimedia Messaging Service) es un servicio de datos utilizado para enviar y recibir mensajes de texto que pueden incluir contenido multimedia.
+EDGE: la velocidad de datos mejorada para la evolución de GSM (EDGE, Enhanced Data Rates for GSM Evolution) ofrece mayores velocidades de datos y confiabilidad de datos mejorada.
+EV-DO: la optimización para evolución de datos (EV-DO, Evolution-Data Optimized) proporciona velocidades de subida y QoS mejoradas.
+HSDPA: el acceso de alta velocidad a paquete de enlace de bajada (HSDPA, High Speed Downlink Packet Access) ofrece velocidad de acceso 3G mejorada.
+Cable
+
+Las conexiones a Internet por cable no utilizan líneas telefónicas. En las conexiones por cable se utilizan líneas de cable coaxial originalmente diseñadas para la transmisión de televisión por cable. Los módems por cable conectan la PC a la compañía de cable. Puede conectar la PC directamente al módem por cable o a un router, switch, hub o dispositivo de red multipropósito, a fin de que varias PC puedan compartir la conexión a Internet. Al igual que DSL, la conexión por cable ofrece velocidades elevadas y un servicio permanente, lo que significa que la conexión a Internet está disponible aun cuando no esté en uso.
+
+Satélite
+
+La conexión de banda ancha satelital es una alternativa para aquellos clientes que no tienen acceso a conexiones por cable ni DSL. Las conexiones satelitales no requieren una línea telefónica ni una conexión por cable, sino que utilizan una antena satelital para proporcionar comunicación bidireccional. La antena satelital recibe señales de un satélite, que retransmite dichas señales a un proveedor de servicio, como se muestra en la ilustración, y también envía señales a dicho satélite. Las velocidades de descarga son de hasta 1 Gb/s, y las de subida son cercanas a los 10 Mb/s. La señal de la antena satelital demora un tiempo en transmitirse a su ISP a través del satélite que orbita la Tierra. Debido a esta latencia, dificulta el uso de aplicaciones en las que el tiempo es un factor importante, como videojuegos, VoIP y conferencias de video.
+
+Banda ancha por fibra óptica
+
+La banda ancha por fibra óptica proporciona mayores velocidades de conexión y ancho de banda que los módems por cable, DSL e ISDN. La banda ancha por fibra óptica permite proporcionar gran cantidad de servicios digitales, como telefonía, video, datos y conferencias de video simultáneamente.
+
+6.9.1.7 Elección de un ISP para un cliente
+Existen varias soluciones WAN disponibles para establecer conexiones entre sitios o conexiones a Internet. Los servicios de conexión WAN proporcionan diferentes velocidades y niveles de servicio. Debe comprender de qué manera se conectan los usuarios a Internet, así como las ventajas y desventajas de los diferentes tipos de conexión. La elección del ISP puede tener un efecto evidente en el servicio de red. Algunos revendedores privados que se conectan a una compañía telefónica pueden vender más conexiones de las permitidas, lo que reduce la velocidad general del servicio que ofrecen a los clientes.
+
+Deben considerarse cuatro aspectos principales de las conexiones a Internet:
+
+Costo
+Velocidad
+Confiabilidad
+Disponibilidad
+Averigüe los tipos de conexión que ofrecen los ISP antes de elegir un ISP. Verifique qué servicios están disponibles en su área. Compare las velocidades de conexión, la confiabilidad y el costo antes de firmar un acuerdo de servicio.
+
+POTS
+
+Las conexiones mediante POTS son extremadamente lentas, pero están disponibles en cualquier sitio en que haya un teléfono. El uso de la línea telefónica con un módem analógico presenta dos desventajas principales. La primera es que la línea telefónica no puede utilizarse para realizar llamadas de voz mientras el módem está en uso, y la segunda es el ancho de banda limitado que proporciona el servicio telefónico analógico. Si bien el ancho de banda máximo con un módem analógico es de 56 Kb/s, el ancho de banda real suele ser bastante menor. Los módems analógicos no es una buena solución para las demandas de redes con mucho tráfico.
+
+ISDN
+
+ISDN es muy confiable dado que utiliza líneas de POTS. ISDN está disponible en la mayoría de los lugares donde la compañía telefónica admite señalización digital para la transmisión de datos. Como utiliza tecnología digital, ISDN ofrece tiempos de conexión más rápidos, mayores velocidades y mejor calidad de voz que el servicio telefónico analógico tradicional. También permite que varios dispositivos compartan una única línea telefónica.
+
+DSL
+
+DSL permite que varios dispositivos compartan una única línea telefónica. Las velocidades de DSL suelen ser mayores que las de ISDN. DSL admite el uso de aplicaciones de ancho de banda elevado, así como que varios usuarios compartan la misma conexión a Internet. En la mayoría de los casos, los cables de cobre que ya se encuentran instalados en el hogar o la empresa pueden transmitir las señales necesarias para la comunicación DSL.
+
+No obstante, la tecnología DSL presenta limitaciones:
+
+El servicio DSL no está disponible en cualquier parte y funciona mejor y más rápido cuanto más cerca se encuentra la instalación de la oficina central (CO, central office) del proveedor de telefonía.
+En algunos casos, las líneas telefónicas instaladas no son aptas para transmitir todas las señales DSL.
+La información de voz y los datos transmitidos mediante DSL deben separarse en las instalaciones del cliente. Un dispositivo denominado “filtro” evita que las señales de datos interfieran con las señales de voz.
+Cable
+
+La mayoría de los hogares que poseen televisión por cable tienen la opción de instalar un servicio de Internet de alta velocidad a través del mismo cable. Muchas compañías de cable también ofrecen servicio telefónico.
+
+Satélite
+
+Las personas que viven en áreas rurales suelen utilizar banda ancha satelital, dado que necesitan conexiones más rápidas que dial-up y no cuentan con ninguna otra conexión de banda ancha disponible. El costo de instalación y las tarifas por servicio mensual suelen ser bastante más elevados que los de DSL y cable. Las tormentas fuertes pueden disminuir la calidad de la conexión, ya que pueden reducir la velocidad o, incluso, interrumpir la conexión.
+
+Datos móviles
+
+Existen muchos tipos de servicios de Internet inalámbrica disponibles. Las mismas compañías que ofrecen servicios de telefonía móvil pueden ofrecer servicios de Internet. Se utilizan tarjetas PC Card/ExpressBus, USB o tarjetas PCI y PCIe para conectar PC a Internet. Los proveedores de servicio pueden ofrecer servicio de Internet inalámbrica mediante tecnología de microondas en áreas limitadas.
+
+
+6.10 Técnicas de mantenimiento preventivo comunes utilizadas para redes
+6.10.1 Mantenimiento de redes
+6.10.1.1 Procedimientos de mantenimiento preventivo
+Existen técnicas de mantenimiento preventivo comunes que deben realizarse de forma continua para que una red funcione correctamente. En una organización, si una PC no funciona correctamente, por lo general, solo se ve afectado ese usuario. En cambio, si la red no funciona correctamente, pocos usuarios pueden trabajar o ninguno.
+
+El mantenimiento preventivo es tan importante para la red como para las PC de una red. Debe revisar el estado de los cables, los dispositivos de red, los servidores y las PC para asegurarse de que estén limpios y en buenas condiciones de funcionamiento. Uno de los mayores problemas con los dispositivos de red, en especial en la sala de servidores, es el calor. Los dispositivos de red no funcionan bien cuando recalientan. Cuando se acumula polvo dentro de los dispositivos de red o sobre ellos, el aire frío no circula adecuadamente, y, en ocasiones, se obstruyen los ventiladores. Es importante que las salas de redes estén limpias y que se cambien los filtros de aire con frecuencia. También se recomienda tener filtros de repuesto disponibles para realizar un mantenimiento rápido. Debe idear un plan para realizar la limpieza y el mantenimiento programado a intervalos regulares. El programa de mantenimiento ayuda a evitar el tiempo de inactividad de la red y las fallas en los equipos.
+
+Como parte del programa de mantenimiento programado de forma regular, inspeccione todo el cableado. Asegúrese de que los cables estén correctamente rotulados y de que no se despeguen las etiquetas. Reemplace las etiquetas desgastadas o ilegibles. Siempre siga las pautas de etiquetado de cables de la compañía. Verifique que los soportes para cables estén instalados correctamente y que no se aflojen los puntos de conexión. El cableado puede dañarse o desgastarse. Conserve el cableado en buenas condiciones para mantener el buen rendimiento de la red. Si es necesario, consulte diagramas de cableado.
+
+Revise los cables en las estaciones de trabajo y las impresoras. A menudo, las personas mueven o patean los cables cuando estos se encuentran debajo de los escritorios. Estas condiciones pueden tener como consecuencia la pérdida del ancho de banda o de la conectividad.
+
+Como técnico, debe advertir que los equipos presentan fallas, están dañados o hacen ruidos inusuales. Informe al administrador de red si advierte cualquiera de estos problemas para evitar el tiempo de inactividad de la red innecesario. Asimismo, debe ser proactivo en lo que respecta a la capacitación de los usuarios de la red. Muestre a los usuarios de la red cómo conectar y desconectar cables correctamente y cómo moverlos, si es necesario.
+
+6.11 Proceso básico de resolución de problemas para redes
+6.11.1 Aplicación del proceso de resolución de problemas a las redes
+6.11.1.1 Identificación del problema
+Los problemas de red pueden ser simples o complejos, y pueden ser el resultado de una combinación de problemas de hardware, software y conectividad. Los técnicos informáticos deben ser capaces de analizar el problema y determinar la causa del error para poder reparar el problema de red. Este proceso se denomina “resolución de problemas”.
+
+Para evaluar el problema, determine cuántas PC de la red lo tienen. Si existe un problema con una PC de la red, inicie el proceso de resolución de problemas en esa PC. Si existe un problema con todas las PC de la red, inicie el proceso de resolución de problemas en la sala de redes donde se conectan todas las PC. Como técnico, debe desarrollar un método lógico y coherente para diagnosticar problemas de red mediante la eliminación de un problema por vez.
+
+Siga los pasos descritos en esta sección para identificar, reparar y registrar el problema con precisión. El primer paso del proceso de resolución de problemas consiste en identificar el problema. En la ilustración, se muestra una lista de preguntas abiertas y cerradas que se deben hacer al cliente.
+
+6.11.1.2 Establecimiento de una teoría de causas probables
+Después de hablar con el cliente, puede establecer una teoría de causas probables. En la ilustración, se muestra una lista de algunas causas probables comunes de los problemas de red.
+
+6.11.1.3 Puesta a prueba de la teoría para determinar la causa
+Una vez que haya elaborado algunas teorías sobre el problema, ponga a prueba dichas teorías para determinar la causa del problema. En la ilustración, se muestra una lista de procedimientos rápidos que pueden ayudar a determinar la causa exacta del problema o, incluso, resolverlo. Si el problema se corrige con un procedimiento rápido, puede verificar la funcionalidad total del sistema. Si el problema no se corrige con un procedimiento rápido, quizá deba continuar investigando el problema para establecer la causa exacta.
+
+6.11.1.4 Establecimiento de un plan de acción para resolver el problema e implementar la solución
+Una vez que haya determinado la causa exacta del problema, establezca un plan de acción para resolver el problema e implementar la solución. En la ilustración, se muestran algunas fuentes que puede consultar para reunir información adicional a fin de resolver un problema.
+
+6.11.1.5 Verificación de la funcionalidad total del sistema e implementación de medidas preventivas
+Una vez que haya corregido el problema, verifique la funcionalidad total y, si corresponde, implemente medidas preventivas. En la ilustración, se muestra una lista de los pasos para verificar la solución.
+
+6.11.1.6 Registro de hallazgos, acciones y resultados
+El último paso del proceso de resolución de problemas consiste en registrar los hallazgos, las acciones y los resultados. En la ilustración, se muestra una lista de las tareas requeridas para registrar el problema y la solución.
+
+6.11.2 Problemas y soluciones comunes de las redes
+6.11.2.1 Identificación de problemas y soluciones comunes
+Los problemas de red pueden deberse a problemas de hardware, de software o de configuración, o a una combinación de estos tres. Deberá resolver algunos tipos de problemas de red con más frecuencia que otros. En la ilustración, se muestra una tabla con problemas y soluciones comunes de red.
+
+6.12 Redes
+6.12.1 Resumen
+En este capítulo, se presentaron los principios básicos de networking, los beneficios de contar con una red, las formas de conectar PC a una red, y la planificación, la implementación y la actualización de redes y componentes de red. Se analizaron los distintos aspectos de la resolución de problemas de una red con ejemplos de cómo analizar e implementar soluciones simples. Es importante recordar los siguientes conceptos de este capítulo:
+
+Una red de computadoras consta de dos o más PC que comparten datos y recursos.
+Existen varios tipos distintos de red denominados LAN, WLAN, PAN, MAN y WAN.
+En una red punto a punto, los dispositivos se conectan directamente entre sí. Las redes punto a punto son fáciles de instalar, y no se necesitan equipos adicionales o un administrador dedicado. Los usuarios controlan sus propios recursos, y la red funciona mejor con pocas PC. Las redes cliente/servidor utilizan un sistema dedicado que funciona como el servidor. El servidor responde a las solicitudes que realizan los usuarios o los clientes conectados a la red.
+La topología de la red define la forma en que se conectan las PC, las impresoras y otros dispositivos. La topología física describe la disposición del cable y los dispositivos, así como las rutas utilizadas para la transmisión de datos. La topología lógica es la ruta que recorren las señales desde un punto hasta otro. Las topologías incluyen topología de bus, en estrella, en anillo, de malla e híbrida.
+Los dispositivos de networking se utilizan para conectar PC y dispositivos periféricos de modo que puedan comunicarse. Entre ellos se incluyen hubs, puentes, switches, routers y dispositivos multipropósito. El tipo de dispositivo implementado depende del tipo de red.
+Los medios de networking pueden definirse como el medio por el cual las señales o los datos se envían de una PC a otra. Las señales pueden transmitirse por cable o por medios inalámbricos. Los tipos de medios que se analizaron fueron el cableado coaxial, de par trenzado, de fibra óptica y las radiofrecuencias.
+Actualmente, la arquitectura de Ethernet es el tipo de arquitectura LAN más popular. La arquitectura se refiere a la estructura general de un sistema de computación o de comunicación. Determina las capacidades y limitaciones del sistema. La arquitectura de Ethernet se basa en el estándar IEEE 802.3. El estándar IEEE 802.3 especifica que una red debe implementar el método de control de acceso CSMA/CD.
+El modelo de referencia OSI es un marco estándar en la industria que divide las funciones de networking en siete capas distintas: aplicación, presentación, sesión, transporte, red, enlace de datos y física. Es importante comprender el propósito de cada capa.
+La suite de protocolos TCP/IP se convirtió en el estándar predominante para Internet. TCP/IP representa un conjunto de estándares públicos que especifican cómo se intercambian los paquetes de información entre las PC de una o más redes.
+Una NIC es un dispositivo que se conecta a una motherboard y proporciona puertos para las conexiones del cable de red. Constituye la interfaz de la PC con la LAN.
+Los recursos se comparten a través de la red cuando las PC pertenecen al mismo grupo de trabajo y al mismo grupo en el hogar.
+La conectividad de red se puede probar con herramientas CLI como ping, ipconfig, net, tracert y nslookup.
+Los tres métodos de transmisión para enviar señales a través de canales de datos son simplex, half-duplex y full-duplex. La tecnología de networking full-duplex mejora el rendimiento, debido a que los datos se pueden enviar y recibir al mismo tiempo. La tecnología DSL, de cable, y otras tecnologías de banda ancha, funcionan en modo full-duplex.
+Se deben realizar tareas de mantenimiento de los dispositivos y medios de red, como los componentes de PC. Es importante limpiar los equipos con regularidad y aplicar un enfoque proactivo para evitar problemas. Repare o reemplace los equipos rotos para evitar el tiempo de inactividad.
+Muchos riesgos de seguridad se asocian a los entornos, los dispositivos y los medios de red.
+Tome decisiones con respecto al diseño de red que satisfagan las necesidades de los clientes y que cumplan los objetivos de estos.
+Seleccione componentes de red que ofrezcan las capacidades y los servicios necesarios para implementar una red según las necesidades del cliente.
+Planifique las instalaciones de red según los equipos y los servicios necesarios.
+La actualización de una red puede implicar la necesidad de cableado o equipos adicionales.
+Evite problemas de red mediante el desarrollo y la implementación de una política integral de mantenimiento preventivo.
+Al realizar la resolución de problemas de red, escuche lo que le dicen los clientes de modo que pueda formular preguntas abiertas y cerradas que le ayuden a determinar por dónde abordar el problema. Verifique los problemas obvios y pruebe soluciones rápidas antes de elevar el proceso de resolución de problemas.
